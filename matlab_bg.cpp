@@ -35,6 +35,7 @@
 
 #include <windows.h>
 #include <tlhelp32.h>
+#include <dwmapi.h>
 #include <gdiplus.h>
 #include <string>
 #include <vector>
@@ -43,6 +44,7 @@
 #include <cwchar>
 
 #pragma comment(lib, "gdiplus.lib")
+#pragma comment(lib, "dwmapi.lib")
 
 using namespace Gdiplus;
 
@@ -423,6 +425,10 @@ static bool CreateOverlay()
 
     // Show the window
     ShowWindow(g_hwndOverlay, SW_SHOWNOACTIVATE);
+
+    // Disable DWM drop shadow (adds visual darkening on layered popups)
+    MARGINS m = {-1, -1, -1, -1};
+    DwmExtendFrameIntoClientArea(g_hwndOverlay, &m);
 
     Log(L"Overlay created: hwnd=0x%p", (void*)g_hwndOverlay);
     return true;
