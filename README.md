@@ -6,6 +6,8 @@ Add a customizable background image to MATLAB R2025a's desktop.
 
 ![Screenshot](Pictures/ScreenShot2026-06-14-190154.png)
 
+**star it if you like it**
+
 ## Features
 
 - **Scope 1** — Overlay on the Command Window area only (Win32 layered window)
