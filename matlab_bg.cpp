@@ -1164,28 +1164,30 @@ static bool CdpInjectCSS()
     _snprintf(opacityStr, sizeof(opacityStr), "%.2f", g_cfg.opacity / 100.0);
     _snprintf(dimmingStr, sizeof(dimmingStr), "%.2f", g_cfg.dimming / 100.0);
 
-    // 4. Build the JS expression for the dimming overlay + image placeholder
-    //    Image data will be sent in chunks via separate CDP commands below
+    // 4. Build the JS expression for creating overlay elements (once).
+    //    Subsequent re-injections only update img.src, no remove/recreate.
     std::string jsLayer;
     jsLayer += "(function(){";
     jsLayer += "var w=document.querySelector('"; jsLayer += cssSelector; jsLayer += "');";
     jsLayer += "if(!w)return;";
-    jsLayer += "var o=document.getElementById('matlab_bg_img');if(o)o.remove();";
-    jsLayer += "o=document.getElementById('matlab_bg_dim');if(o)o.remove();";
     jsLayer += "if(getComputedStyle(w).position==='static')w.style.position='relative';";
-    // Dimming layer (instant, no network)
-    jsLayer += "var dim=document.createElement('div');dim.id='matlab_bg_dim';";
+    // Dimming layer — create only if not already present
+    jsLayer += "var dim=document.getElementById('matlab_bg_dim');";
+    jsLayer += "if(!dim){";
+    jsLayer += "dim=document.createElement('div');dim.id='matlab_bg_dim';";
     jsLayer += "dim.style.cssText='position:absolute;top:0;left:0;width:100%;height:100%;"
                "background:black;opacity:"; jsLayer += dimmingStr; jsLayer += ";"
                "z-index:1;pointer-events:none';";
-    jsLayer += "w.appendChild(dim);";
-    // Placeholder img element (src set later via chunks)
-    jsLayer += "var img=document.createElement('img');img.id='matlab_bg_img';";
+    jsLayer += "w.appendChild(dim);}";
+    // Image layer — create only if not already present
+    jsLayer += "var img=document.getElementById('matlab_bg_img');";
+    jsLayer += "if(!img){";
+    jsLayer += "img=document.createElement('img');img.id='matlab_bg_img';";
     jsLayer += "img.style.cssText='position:absolute;top:0;left:0;width:100%;height:100%;"
                "object-fit:"; jsLayer += objFit; jsLayer += ";"
                "object-position:center;opacity:"; jsLayer += opacityStr; jsLayer += ";"
                "z-index:0;pointer-events:none';";
-    jsLayer += "w.appendChild(img);";
+    jsLayer += "w.appendChild(img);}";
     jsLayer += "})()";
 
     // Build CDP command for layer creation (id=1)
