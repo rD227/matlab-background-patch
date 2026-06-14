@@ -4,7 +4,7 @@ Add a customizable background image to MATLAB R2025a's desktop.
 
 [中文版](README_CN.md)
 
-![like this](/Pictures/ScreenShot2026-06-14 190154.png)
+![Screenshot](Pictures/ScreenShot2026-06-14-190154.png)
 
 ## Features
 

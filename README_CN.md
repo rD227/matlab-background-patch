@@ -4,10 +4,12 @@
 
 [English](README.md)
 
+![截图](Pictures/ScreenShot2026-06-14-190154.png)
+
 ## 功能
 
 - **Scope 1** — 仅在命令行窗口区域叠加背景（Win32 分层窗口）
-- **Scope 2** — 在 个 MATLAB 窗口上叠加背景（Win32 分层窗口）
+- **Scope 2** — 在整个 MATLAB 窗口上叠加背景（Win32 分层窗口）
 - **Scope 3** — 通过 Chrome DevTools Protocol (CDP) 直接在 MATLAB 桌面 DOM 中注入 CSS/JS。支持在任意 CSS 选择器上添加图片背景 + 变暗遮罩。
 
 所有模式均支持：可调节的透明度、黑色变暗层、5 种图片缩放模式（适应/填充/拉伸/居中/平铺）。
