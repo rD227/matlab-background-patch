@@ -91,7 +91,7 @@ DebugLog=1
 | `ScaleMode` | `1` | `0` = 适应（保持比例） <br> `1` = 填充（裁切） <br> `2` = 拉伸 <br> `3` = 居中（原始尺寸） <br> `4` = 平铺 |
 | `Speed` | `150` | 刷新间隔（毫秒，50–2000）。Scope 3 下此值影响 CDP 的轮询检查间隔 |
 | `CdpPort` | `0` | Scope 3 的 CDP 调试端口。`0` = 自动检测（尝试 9222–9229） |
-| `CdpTarget` | `#commandWindowWrapper` | Scope 3 背景注入目标的 CSS 选择器 |
+| `CdpTarget` | `#commandWindowWrapper` | Scope 3 的 CSS 选择器。常用目标：<br>`#commandWindowWrapper` — 命令行窗口<br>`.editorWindow` — 所有编辑器标签页<br>`.editorWindow.active` — 当前活跃编辑器<br>`.editorWindow.liveCode` — Live Editor<br>`#commandWindowWrapper,.editorWindow` — 命令行+编辑器 |
 | `HttpPort` | `9221` | Scope 3 本地 HTTP 图片服务器端口。端口冲突时可更改 |
 | `DebugLog` | `1` | `0` = 不写日志文件，`1` = 写入 `matlab_bg.log` |
 

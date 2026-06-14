@@ -89,7 +89,7 @@ When `Scope=3`, the patcher automatically:
 | `ScaleMode` | `1` | `0` = Fit (keep aspect ratio) <br> `1` = Fill (cover, crop) <br> `2` = Stretch <br> `3` = Center (original size) <br> `4` = Tile |
 | `Speed` | `150` | Refresh interval in ms (50–2000). For Scope 3, this only affects the CDP re-injection check interval |
 | `CdpPort` | `0` | CDP debug port for Scope 3. `0` = auto-detect (tries 9222–9229) |
-| `CdpTarget` | `#commandWindowWrapper` | CSS selector to target for Scope 3 background injection |
+| `CdpTarget` | `#commandWindowWrapper` | CSS selector for Scope 3. Common targets:<br>`#commandWindowWrapper` — Command Window<br>`.editorWindow` — All editor tabs<br>`.editorWindow.active` — Active editor<br>`.editorWindow.liveCode` — Live Editor<br>`#commandWindowWrapper,.editorWindow` — Both |
 | `HttpPort` | `9221` | Local HTTP image server port (Scope 3). Change if port conflicts |
 | `DebugLog` | `1` | `0` = no log file, `1` = write `matlab_bg.log` |
 

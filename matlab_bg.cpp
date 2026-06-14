@@ -66,7 +66,7 @@ struct Config {
     int   scaleMode = 1;    // 0=fit, 1=fill, 2=stretch, 3=center, 4=tile
     int   speed     = 150;  // timer interval ms (50-2000)
     int   cdpPort   = 0;    // CDP debug port (0=auto-detect 9222-9229)
-    WCHAR cdpTarget[128] = L"#commandWindowWrapper"; // CSS selector for Scope=3
+    WCHAR cdpTarget[128] = L"#commandWindowWrapper"; // CSS selector for Scope=3 (.editorWindow = editor, .commandWindowView = CmdWnd)
     int   httpPort  = 9221; // HTTP image server port for Scope=3
     int   debugLog  = 1;    // Write log file? 0=no, 1=yes
 };
