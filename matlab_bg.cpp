@@ -1001,13 +1001,50 @@ static bool CdpInjectCSS()
     char cssSelector[256] = {};
     WideCharToMultiByte(CP_UTF8, 0, g_cfg.cdpTarget, -1, cssSelector, sizeof(cssSelector), nullptr, nullptr);
 
-    // For CSS url(), convert backslashes to forward slashes
-    char cssPath[MAX_PATH * 4] = {};
-    WideCharToMultiByte(CP_UTF8, 0, g_cfg.imagePath, -1, cssPath, sizeof(cssPath), nullptr, nullptr);
-    std::string cssPathFixed;
-    for (int i = 0; cssPath[i]; i++) {
-        if (cssPath[i] == '\\') cssPathFixed += '/';
-        else cssPathFixed += cssPath[i];
+    // 3b. Read image file and encode as data: URI (CEF blocks file:/// from https:// pages)
+    std::string dataUri;
+    {
+        // Determine MIME type from extension
+        const WCHAR *ext = wcsrchr(g_cfg.imagePath, L'.');
+        const char *mimeType = "image/png";   // default
+        if (ext) {
+            if (_wcsicmp(ext, L".jpg") == 0 || _wcsicmp(ext, L".jpeg") == 0)
+                mimeType = "image/jpeg";
+            else if (_wcsicmp(ext, L".bmp") == 0)
+                mimeType = "image/bmp";
+            else if (_wcsicmp(ext, L".gif") == 0)
+                mimeType = "image/gif";
+        }
+
+        // Read the raw image file
+        HANDLE hFile = CreateFileW(g_cfg.imagePath, GENERIC_READ, FILE_SHARE_READ,
+                                    nullptr, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, nullptr);
+        if (hFile != INVALID_HANDLE_VALUE) {
+            DWORD fileSize = GetFileSize(hFile, nullptr);
+            if (fileSize > 0 && fileSize < 10 * 1024 * 1024) { // 10 MB limit
+                BYTE *imgData = new BYTE[fileSize];
+                DWORD bytesRead = 0;
+                if (ReadFile(hFile, imgData, fileSize, &bytesRead, nullptr) && bytesRead == fileSize) {
+                    int padLen = ((fileSize + 2) / 3) * 4;
+                    char *b64 = new char[padLen + 1];
+                    b64encode(imgData, fileSize, b64);
+                    dataUri = "data:";
+                    dataUri += mimeType;
+                    dataUri += ";base64,";
+                    dataUri += b64;
+                    delete[] b64;
+                    Log(L"CDP: image encoded as data:%hs (%d bytes → %d b64)",
+                        mimeType, fileSize, (int)dataUri.size());
+                }
+                delete[] imgData;
+            }
+            CloseHandle(hFile);
+        }
+        if (dataUri.empty()) {
+            Log(L"CDP: failed to read/encode image: %s", g_cfg.imagePath);
+            closesocket(ws); WSACleanup();
+            return false;
+        }
     }
 
     // Determine background-size and background-repeat based on scaleMode
@@ -1020,17 +1057,17 @@ static bool CdpInjectCSS()
     }
     const char *bgRepeat = (g_cfg.scaleMode == 4) ? "repeat" : "no-repeat";
 
-    // 4. Build the CSS text directly (avoid _snprintf with %s for wide strings)
+    // 4. Build the CSS text directly.
     // The <style> element will be injected into the target page's <head>.
-    // Uses ::before for the image and ::after for the dimming overlay.
+    // Uses ::before for the image (data URI) and ::after for the dimming overlay.
     std::string css;
     css += cssSelector;
     css += " { position: relative; } ";
     css += cssSelector;
     css += "::before { ";
     css += "content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; ";
-    css += "background-image: url('file:///";
-    css += cssPathFixed;
+    css += "background-image: url('";
+    css += dataUri;
     css += "'); ";
     css += "background-size: "; css += bgSize; css += "; ";
     css += "background-position: center; ";
