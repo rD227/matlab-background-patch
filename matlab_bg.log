@@ -1,976 +1,848 @@
-[17:46:27.680] === MATLAB BG Patcher v2.0 ===
-[17:46:27.727] Config: scope=3 image='C:\Users\xvsu\Desktop\bg.png' opacity=22 dimming=22 scaleMode=3 speed=150 cdpPort=9222 cdpTarget='#commandWindowWrapper'
-[17:46:27.727] Entering Scope=3 CDP mode
-[17:46:27.727] CDP: CdpInjectCSS starting, port=9222
-[17:46:27.727] HTTP: loaded image image/jpeg (82619 bytes)
-[17:46:27.729] HTTP: image server started on 127.0.0.1:9221
-[17:46:27.833] CDP: connecting to 127.0.0.1:9222 ...
-[17:46:29.879] CDP: connect() to port 9222 failed: 10061
-[17:46:29.879] CDP: first injection FAILED
-[17:46:29.881] CDP mode active: re-injecting CSS every 5s
-[17:46:34.886] CDP: CdpInjectCSS starting, port=9222
-[17:46:34.886] CDP: connecting to 127.0.0.1:9222 ...
-[17:46:36.908] CDP: connect() to port 9222 failed: 10061
-[17:46:39.880] CDP: CdpInjectCSS starting, port=9222
-[17:46:39.880] CDP: connecting to 127.0.0.1:9222 ...
-[17:46:39.880] CDP: connected, sending GET /json
-[17:46:44.886] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:46:44.887] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:46:44.887] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:46:44.889] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:46:44.889] CDP: dimming layer created
-[17:46:44.890] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:46:44.892] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:46:44.892] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:46:44.894] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:46:44.894] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:46:44.895] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:46:44.895] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:46:44.896] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:46:44.897] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:46:44.898] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:46:44.898] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:46:44.899] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:46:44.900] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:46:44.900] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:46:44.901] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:46:44.901] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:46:44.902] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:46:44.902] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:46:44.902] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:46:44.904] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:46:44.904] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:46:44.904] CDP: sent 19 chunks (110160 bytes total)
-[17:46:44.907] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:46:44.907] CDP: image set via blob URL (19 chunks)
-[17:46:44.907] CDP: CdpInjectCSS starting, port=9222
-[17:46:44.907] CDP: connecting to 127.0.0.1:9222 ...
-[17:46:44.908] CDP: connected, sending GET /json
-[17:46:49.922] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:46:49.922] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:46:49.923] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:46:49.924] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:46:49.924] CDP: dimming layer created
-[17:46:49.925] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:46:49.925] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:46:49.925] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:46:49.927] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:46:49.927] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:46:49.928] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:46:49.928] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:46:49.929] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:46:49.929] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:46:49.929] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:46:49.930] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:46:49.930] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:46:49.931] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:46:49.931] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:46:49.932] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:46:49.932] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:46:49.932] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:46:49.933] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:46:49.934] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:46:49.934] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:46:49.936] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:46:49.936] CDP: sent 19 chunks (110160 bytes total)
-[17:46:49.938] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:46:49.939] CDP: image set via blob URL (19 chunks)
-[17:46:49.939] CDP: CdpInjectCSS starting, port=9222
-[17:46:49.940] CDP: connecting to 127.0.0.1:9222 ...
-[17:46:49.940] CDP: connected, sending GET /json
-[17:46:54.952] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:46:54.952] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:46:54.954] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:46:54.955] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:46:54.955] CDP: dimming layer created
-[17:46:54.955] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:46:54.956] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:46:54.957] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:46:54.957] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:46:54.957] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:46:54.958] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:46:54.959] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:46:54.959] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:46:54.959] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:46:54.960] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:46:54.960] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:46:54.961] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:46:54.961] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:46:54.962] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:46:54.962] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:46:54.962] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:46:54.962] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:46:54.964] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:46:54.965] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:46:54.965] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:46:54.966] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:46:54.966] CDP: sent 19 chunks (110160 bytes total)
-[17:46:54.969] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:46:54.969] CDP: image set via blob URL (19 chunks)
-[17:46:54.970] CDP: CdpInjectCSS starting, port=9222
-[17:46:54.970] CDP: connecting to 127.0.0.1:9222 ...
-[17:46:54.971] CDP: connected, sending GET /json
-[17:46:59.974] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:46:59.975] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:46:59.975] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:46:59.976] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:46:59.976] CDP: dimming layer created
-[17:46:59.977] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:46:59.977] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:46:59.978] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:46:59.978] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:46:59.979] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:46:59.980] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:46:59.981] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:46:59.982] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:46:59.982] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:46:59.982] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:46:59.983] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:46:59.983] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:46:59.984] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:46:59.984] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:46:59.984] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:46:59.987] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:46:59.987] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:46:59.988] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:46:59.988] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:46:59.989] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:46:59.990] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:46:59.990] CDP: sent 19 chunks (110160 bytes total)
-[17:46:59.993] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:46:59.993] CDP: image set via blob URL (19 chunks)
-[17:46:59.993] CDP: CdpInjectCSS starting, port=9222
-[17:46:59.993] CDP: connecting to 127.0.0.1:9222 ...
-[17:46:59.994] CDP: connected, sending GET /json
-[17:47:04.998] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:47:04.998] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:47:04.999] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:47:05.000] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:47:05.000] CDP: dimming layer created
-[17:47:05.000] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:47:05.001] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:47:05.002] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:47:05.003] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:47:05.003] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:47:05.003] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:47:05.004] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:47:05.004] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:47:05.005] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:47:05.005] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:47:05.006] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:47:05.006] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:47:05.007] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:47:05.008] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:47:05.008] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:47:05.009] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:47:05.009] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:47:05.009] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:47:05.010] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:47:05.011] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:47:05.011] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:47:05.011] CDP: sent 19 chunks (110160 bytes total)
-[17:47:05.014] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:47:05.015] CDP: image set via blob URL (19 chunks)
-[17:47:05.015] CDP: CdpInjectCSS starting, port=9222
-[17:47:05.015] CDP: connecting to 127.0.0.1:9222 ...
-[17:47:05.016] CDP: connected, sending GET /json
-[17:47:10.025] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:47:10.027] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:47:10.027] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:47:10.028] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:47:10.029] CDP: dimming layer created
-[17:47:10.029] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:47:10.029] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:47:10.030] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:47:10.030] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:47:10.030] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:47:10.031] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:47:10.032] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:47:10.032] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:47:10.032] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:47:10.033] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:47:10.034] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:47:10.034] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:47:10.035] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:47:10.035] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:47:10.036] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:47:10.036] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:47:10.037] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:47:10.038] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:47:10.038] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:47:10.039] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:47:10.039] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:47:10.040] CDP: sent 19 chunks (110160 bytes total)
-[17:47:10.042] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:47:10.043] CDP: image set via blob URL (19 chunks)
-[17:47:10.043] CDP: CdpInjectCSS starting, port=9222
-[17:47:10.043] CDP: connecting to 127.0.0.1:9222 ...
-[17:47:10.043] CDP: connected, sending GET /json
-[17:47:15.055] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:47:15.055] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:47:15.057] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:47:15.058] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:47:15.058] CDP: dimming layer created
-[17:47:15.059] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:47:15.059] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:47:15.061] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:47:15.061] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:47:15.061] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:47:15.062] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:47:15.062] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:47:15.064] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:47:15.065] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:47:15.065] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:47:15.066] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:47:15.066] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:47:15.067] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:47:15.069] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:47:15.069] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:47:15.070] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:47:15.071] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:47:15.072] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:47:15.072] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:47:15.073] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:47:15.073] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:47:15.073] CDP: sent 19 chunks (110160 bytes total)
-[17:47:15.075] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:47:15.075] CDP: image set via blob URL (19 chunks)
-[17:47:15.077] CDP: CdpInjectCSS starting, port=9222
-[17:47:15.077] CDP: connecting to 127.0.0.1:9222 ...
-[17:47:15.077] CDP: connected, sending GET /json
-[17:47:20.078] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:47:20.078] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:47:20.079] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:47:20.080] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:47:20.080] CDP: dimming layer created
-[17:47:20.081] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:47:20.081] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:47:20.081] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:47:20.083] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:47:20.083] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:47:20.084] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:47:20.084] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:47:20.084] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:47:20.086] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:47:20.086] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:47:20.086] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:47:20.087] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:47:20.087] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:47:20.088] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:47:20.088] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:47:20.089] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:47:20.089] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:47:20.089] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:47:20.091] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:47:20.091] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:47:20.092] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:47:20.092] CDP: sent 19 chunks (110160 bytes total)
-[17:47:20.095] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:47:20.095] CDP: image set via blob URL (19 chunks)
-[17:47:20.095] CDP: CdpInjectCSS starting, port=9222
-[17:47:20.095] CDP: connecting to 127.0.0.1:9222 ...
-[17:47:20.096] CDP: connected, sending GET /json
-[17:47:25.101] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:47:25.101] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:47:25.102] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:47:25.103] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:47:25.103] CDP: dimming layer created
-[17:47:25.103] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:47:25.103] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:47:25.104] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:47:25.104] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:47:25.105] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:47:25.105] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:47:25.106] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:47:25.106] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:47:25.107] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:47:25.107] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:47:25.108] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:47:25.108] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:47:25.109] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:47:25.109] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:47:25.109] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:47:25.110] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:47:25.110] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:47:25.111] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:47:25.111] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:47:25.112] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:47:25.112] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:47:25.112] CDP: sent 19 chunks (110160 bytes total)
-[17:47:25.115] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:47:25.116] CDP: image set via blob URL (19 chunks)
-[17:47:25.116] CDP: CdpInjectCSS starting, port=9222
-[17:47:25.116] CDP: connecting to 127.0.0.1:9222 ...
-[17:47:25.117] CDP: connected, sending GET /json
-[17:47:30.127] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:47:30.127] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:47:30.129] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:47:30.130] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:47:30.130] CDP: dimming layer created
-[17:47:30.130] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:47:30.131] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:47:30.132] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:47:30.132] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:47:30.133] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:47:30.133] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:47:30.133] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:47:30.134] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:47:30.134] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:47:30.135] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:47:30.135] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:47:30.136] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:47:30.136] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:47:30.137] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:47:30.138] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:47:30.139] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:47:30.139] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:47:30.139] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:47:30.139] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:47:30.140] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:47:30.140] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:47:30.141] CDP: sent 19 chunks (110160 bytes total)
-[17:47:30.144] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:47:30.144] CDP: image set via blob URL (19 chunks)
-[17:47:30.144] CDP: CdpInjectCSS starting, port=9222
-[17:47:30.144] CDP: connecting to 127.0.0.1:9222 ...
-[17:47:30.146] CDP: connected, sending GET /json
-[17:47:35.151] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:47:35.151] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:47:35.153] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:47:35.153] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:47:35.153] CDP: dimming layer created
-[17:47:35.154] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:47:35.154] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:47:35.155] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:47:35.155] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:47:35.155] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:47:35.156] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:47:35.156] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:47:35.156] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:47:35.156] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:47:35.157] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:47:35.158] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:47:35.158] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:47:35.159] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:47:35.160] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:47:35.160] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:47:35.160] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:47:35.162] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:47:35.162] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:47:35.163] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:47:35.164] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:47:35.165] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:47:35.165] CDP: sent 19 chunks (110160 bytes total)
-[17:47:35.168] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:47:35.168] CDP: image set via blob URL (19 chunks)
-[17:47:35.168] CDP: CdpInjectCSS starting, port=9222
-[17:47:35.168] CDP: connecting to 127.0.0.1:9222 ...
-[17:47:35.168] CDP: connected, sending GET /json
-[17:47:40.171] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:47:40.171] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:47:40.172] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:47:40.173] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:47:40.174] CDP: dimming layer created
-[17:47:40.174] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:47:40.175] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:47:40.175] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:47:40.175] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:47:40.175] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:47:40.176] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:47:40.176] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:47:40.176] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:47:40.178] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:47:40.178] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:47:40.178] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:47:40.179] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:47:40.179] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:47:40.180] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:47:40.180] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:47:40.182] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:47:40.182] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:47:40.182] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:47:40.183] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:47:40.183] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:47:40.185] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:47:40.185] CDP: sent 19 chunks (110160 bytes total)
-[17:47:40.188] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:47:40.188] CDP: image set via blob URL (19 chunks)
-[17:47:40.188] CDP: CdpInjectCSS starting, port=9222
-[17:47:40.188] CDP: connecting to 127.0.0.1:9222 ...
-[17:47:40.189] CDP: connected, sending GET /json
-[17:47:45.203] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:47:45.203] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:47:45.204] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:47:45.206] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:47:45.206] CDP: dimming layer created
-[17:47:45.206] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:47:45.206] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:47:45.208] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:47:45.208] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:47:45.209] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:47:45.209] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:47:45.210] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:47:45.211] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:47:45.211] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:47:45.212] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:47:45.212] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:47:45.213] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:47:45.213] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:47:45.214] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:47:45.214] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:47:45.215] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:47:45.215] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:47:45.216] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:47:45.216] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:47:45.217] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:47:45.217] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:47:45.217] CDP: sent 19 chunks (110160 bytes total)
-[17:47:45.220] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:47:45.220] CDP: image set via blob URL (19 chunks)
-[17:47:45.220] CDP: CdpInjectCSS starting, port=9222
-[17:47:45.221] CDP: connecting to 127.0.0.1:9222 ...
-[17:47:45.221] CDP: connected, sending GET /json
-[17:47:50.225] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:47:50.225] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:47:50.226] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:47:50.227] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:47:50.227] CDP: dimming layer created
-[17:47:50.228] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:47:50.228] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:47:50.229] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:47:50.229] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:47:50.229] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:47:50.230] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:47:50.230] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:47:50.231] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:47:50.231] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:47:50.231] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:47:50.232] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:47:50.233] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:47:50.233] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:47:50.233] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:47:50.233] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:47:50.235] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:47:50.235] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:47:50.236] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:47:50.236] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:47:50.236] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:47:50.238] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:47:50.238] CDP: sent 19 chunks (110160 bytes total)
-[17:47:50.242] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:47:50.242] CDP: image set via blob URL (19 chunks)
-[17:47:50.242] CDP: CdpInjectCSS starting, port=9222
-[17:47:50.242] CDP: connecting to 127.0.0.1:9222 ...
-[17:47:50.242] CDP: connected, sending GET /json
-[17:47:55.250] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:47:55.250] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:47:55.251] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:47:55.252] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:47:55.252] CDP: dimming layer created
-[17:47:55.253] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:47:55.253] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:47:55.255] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:47:55.256] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:47:55.256] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:47:55.257] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:47:55.257] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:47:55.258] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:47:55.258] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:47:55.258] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:47:55.259] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:47:55.259] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:47:55.259] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:47:55.260] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:47:55.262] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:47:55.262] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:47:55.262] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:47:55.263] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:47:55.263] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:47:55.264] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:47:55.264] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:47:55.264] CDP: sent 19 chunks (110160 bytes total)
-[17:47:55.268] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:47:55.268] CDP: image set via blob URL (19 chunks)
-[17:47:55.268] CDP: CdpInjectCSS starting, port=9222
-[17:47:55.268] CDP: connecting to 127.0.0.1:9222 ...
-[17:47:55.269] CDP: connected, sending GET /json
-[17:48:00.273] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:48:00.273] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:48:00.275] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:48:00.275] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:48:00.276] CDP: dimming layer created
-[17:48:00.276] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:48:00.276] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:48:00.278] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:48:00.278] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:48:00.279] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:48:00.279] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:48:00.279] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:48:00.280] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:48:00.280] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:48:00.282] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:48:00.282] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:48:00.283] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:48:00.284] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:48:00.284] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:48:00.284] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:48:00.285] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:48:00.285] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:48:00.287] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:48:00.287] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:48:00.287] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:48:00.288] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:48:00.288] CDP: sent 19 chunks (110160 bytes total)
-[17:48:00.291] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:48:00.291] CDP: image set via blob URL (19 chunks)
-[17:48:00.292] CDP: CdpInjectCSS starting, port=9222
-[17:48:00.293] CDP: connecting to 127.0.0.1:9222 ...
-[17:48:00.293] CDP: connected, sending GET /json
-[17:48:05.308] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:48:05.309] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:48:05.310] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:48:05.311] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:48:05.311] CDP: dimming layer created
-[17:48:05.312] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:48:05.312] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:48:05.313] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:48:05.313] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:48:05.313] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:48:05.314] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:48:05.314] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:48:05.315] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:48:05.315] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:48:05.316] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:48:05.316] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:48:05.316] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:48:05.317] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:48:05.318] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:48:05.318] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:48:05.319] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:48:05.319] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:48:05.320] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:48:05.320] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:48:05.321] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:48:05.321] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:48:05.322] CDP: sent 19 chunks (110160 bytes total)
-[17:48:05.325] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:48:05.325] CDP: image set via blob URL (19 chunks)
-[17:48:05.326] CDP: CdpInjectCSS starting, port=9222
-[17:48:05.326] CDP: connecting to 127.0.0.1:9222 ...
-[17:48:05.326] CDP: connected, sending GET /json
-[17:48:10.330] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:48:10.331] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:48:10.332] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:48:10.332] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:48:10.333] CDP: dimming layer created
-[17:48:10.333] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:48:10.334] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:48:10.334] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:48:10.334] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:48:10.334] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:48:10.336] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:48:10.336] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:48:10.337] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:48:10.338] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:48:10.339] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:48:10.339] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:48:10.340] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:48:10.340] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:48:10.341] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:48:10.342] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:48:10.342] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:48:10.343] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:48:10.343] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:48:10.344] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:48:10.344] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:48:10.344] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:48:10.344] CDP: sent 19 chunks (110160 bytes total)
-[17:48:10.347] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:48:10.347] CDP: image set via blob URL (19 chunks)
-[17:48:10.348] CDP: CdpInjectCSS starting, port=9222
-[17:48:10.348] CDP: connecting to 127.0.0.1:9222 ...
-[17:48:10.348] CDP: connected, sending GET /json
-[17:48:15.359] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:48:15.359] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:48:15.361] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:48:15.362] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:48:15.362] CDP: dimming layer created
-[17:48:15.362] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:48:15.363] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:48:15.363] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:48:15.364] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:48:15.364] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:48:15.364] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:48:15.365] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:48:15.365] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:48:15.366] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:48:15.366] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:48:15.366] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:48:15.366] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:48:15.368] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:48:15.368] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:48:15.368] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:48:15.369] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:48:15.369] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:48:15.370] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:48:15.370] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:48:15.371] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:48:15.371] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:48:15.371] CDP: sent 19 chunks (110160 bytes total)
-[17:48:15.375] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:48:15.377] CDP: image set via blob URL (19 chunks)
-[17:48:15.377] CDP: CdpInjectCSS starting, port=9222
-[17:48:15.377] CDP: connecting to 127.0.0.1:9222 ...
-[17:48:15.377] CDP: connected, sending GET /json
-[17:48:20.383] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:48:20.383] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:48:20.384] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:48:20.384] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:48:20.385] CDP: dimming layer created
-[17:48:20.385] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:48:20.386] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:48:20.386] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:48:20.387] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:48:20.388] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:48:20.389] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:48:20.389] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:48:20.389] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:48:20.390] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:48:20.390] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:48:20.391] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:48:20.392] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:48:20.392] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:48:20.392] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:48:20.393] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:48:20.393] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:48:20.394] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:48:20.394] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:48:20.394] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:48:20.395] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:48:20.395] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:48:20.395] CDP: sent 19 chunks (110160 bytes total)
-[17:48:20.398] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:48:20.398] CDP: image set via blob URL (19 chunks)
-[17:48:20.399] CDP: CdpInjectCSS starting, port=9222
-[17:48:20.399] CDP: connecting to 127.0.0.1:9222 ...
-[17:48:20.399] CDP: connected, sending GET /json
-[17:48:25.402] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:48:25.403] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:48:25.404] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:48:25.404] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:48:25.405] CDP: dimming layer created
-[17:48:25.405] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:48:25.405] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:48:25.406] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:48:25.407] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:48:25.407] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:48:25.407] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:48:25.407] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:48:25.408] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:48:25.408] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:48:25.408] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:48:25.410] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:48:25.410] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:48:25.411] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:48:25.411] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:48:25.412] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:48:25.412] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:48:25.413] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:48:25.413] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:48:25.413] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:48:25.413] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:48:25.415] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:48:25.415] CDP: sent 19 chunks (110160 bytes total)
-[17:48:25.418] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:48:25.418] CDP: image set via blob URL (19 chunks)
-[17:48:25.418] CDP: CdpInjectCSS starting, port=9222
-[17:48:25.419] CDP: connecting to 127.0.0.1:9222 ...
-[17:48:25.419] CDP: connected, sending GET /json
-[17:48:30.427] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:48:30.427] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:48:30.429] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:48:30.430] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:48:30.430] CDP: dimming layer created
-[17:48:30.430] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:48:30.431] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:48:30.431] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:48:30.431] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:48:30.431] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:48:30.432] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:48:30.432] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:48:30.434] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:48:30.434] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:48:30.435] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:48:30.435] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:48:30.435] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:48:30.436] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:48:30.436] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:48:30.436] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:48:30.437] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:48:30.437] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:48:30.438] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:48:30.438] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:48:30.439] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:48:30.440] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:48:30.440] CDP: sent 19 chunks (110160 bytes total)
-[17:48:30.443] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:48:30.443] CDP: image set via blob URL (19 chunks)
-[17:48:30.444] CDP: CdpInjectCSS starting, port=9222
-[17:48:30.444] CDP: connecting to 127.0.0.1:9222 ...
-[17:48:30.444] CDP: connected, sending GET /json
-[17:48:35.458] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:48:35.458] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:48:35.459] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:48:35.459] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:48:35.460] CDP: dimming layer created
-[17:48:35.460] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:48:35.461] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:48:35.461] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:48:35.462] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:48:35.462] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:48:35.462] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:48:35.463] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:48:35.463] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:48:35.464] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:48:35.464] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:48:35.464] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:48:35.464] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:48:35.466] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:48:35.466] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:48:35.467] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:48:35.467] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:48:35.468] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:48:35.469] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:48:35.469] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:48:35.469] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:48:35.470] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:48:35.470] CDP: sent 19 chunks (110160 bytes total)
-[17:48:35.472] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:48:35.473] CDP: image set via blob URL (19 chunks)
-[17:48:35.473] CDP: CdpInjectCSS starting, port=9222
-[17:48:35.473] CDP: connecting to 127.0.0.1:9222 ...
-[17:48:35.474] CDP: connected, sending GET /json
-[17:48:40.484] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:48:40.484] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:48:40.485] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:48:40.486] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:48:40.488] CDP: dimming layer created
-[17:48:40.488] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:48:40.488] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:48:40.489] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:48:40.489] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:48:40.489] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:48:40.489] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:48:40.490] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:48:40.491] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:48:40.491] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:48:40.492] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:48:40.492] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:48:40.494] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:48:40.494] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:48:40.495] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:48:40.495] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:48:40.495] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:48:40.496] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:48:40.496] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:48:40.496] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:48:40.497] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:48:40.497] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:48:40.497] CDP: sent 19 chunks (110160 bytes total)
-[17:48:40.501] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:48:40.501] CDP: image set via blob URL (19 chunks)
-[17:48:40.501] CDP: CdpInjectCSS starting, port=9222
-[17:48:40.501] CDP: connecting to 127.0.0.1:9222 ...
-[17:48:40.503] CDP: connected, sending GET /json
-[17:48:45.510] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:48:45.510] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:48:45.511] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:48:45.513] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:48:45.513] CDP: dimming layer created
-[17:48:45.513] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:48:45.514] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:48:45.514] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:48:45.515] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:48:45.515] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:48:45.515] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:48:45.516] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:48:45.517] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:48:45.517] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:48:45.517] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:48:45.519] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:48:45.519] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:48:45.519] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:48:45.521] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:48:45.521] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:48:45.522] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:48:45.522] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:48:45.522] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:48:45.523] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:48:45.523] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:48:45.523] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:48:45.524] CDP: sent 19 chunks (110160 bytes total)
-[17:48:45.527] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:48:45.527] CDP: image set via blob URL (19 chunks)
-[17:48:45.528] CDP: CdpInjectCSS starting, port=9222
-[17:48:45.528] CDP: connecting to 127.0.0.1:9222 ...
-[17:48:45.529] CDP: connected, sending GET /json
-[17:48:50.534] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:48:50.534] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:48:50.536] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:48:50.538] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:48:50.538] CDP: dimming layer created
-[17:48:50.538] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:48:50.538] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:48:50.539] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:48:50.539] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:48:50.540] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:48:50.540] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:48:50.541] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:48:50.542] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:48:50.543] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:48:50.544] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:48:50.544] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:48:50.545] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:48:50.545] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:48:50.546] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:48:50.548] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:48:50.548] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:48:50.548] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:48:50.549] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:48:50.549] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:48:50.550] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:48:50.551] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:48:50.551] CDP: sent 19 chunks (110160 bytes total)
-[17:48:50.553] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:48:50.553] CDP: image set via blob URL (19 chunks)
-[17:48:50.554] CDP: CdpInjectCSS starting, port=9222
-[17:48:50.554] CDP: connecting to 127.0.0.1:9222 ...
-[17:48:50.554] CDP: connected, sending GET /json
-[17:48:55.563] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:48:55.564] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:48:55.564] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:48:55.565] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:48:55.565] CDP: dimming layer created
-[17:48:55.566] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:48:55.566] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:48:55.567] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:48:55.567] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:48:55.569] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:48:55.569] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:48:55.570] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:48:55.570] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:48:55.571] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:48:55.571] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:48:55.571] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:48:55.572] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:48:55.572] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:48:55.573] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:48:55.573] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:48:55.574] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:48:55.574] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:48:55.575] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:48:55.575] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:48:55.575] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:48:55.576] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:48:55.576] CDP: sent 19 chunks (110160 bytes total)
-[17:48:55.580] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:48:55.580] CDP: image set via blob URL (19 chunks)
-[17:48:55.580] CDP: CdpInjectCSS starting, port=9222
-[17:48:55.581] CDP: connecting to 127.0.0.1:9222 ...
-[17:48:55.581] CDP: connected, sending GET /json
-[17:49:00.587] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:49:00.587] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:49:00.589] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:49:00.590] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:49:00.590] CDP: dimming layer created
-[17:49:00.590] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:49:00.591] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:49:00.591] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:49:00.592] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:49:00.592] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:49:00.593] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:49:00.593] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:49:00.594] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:49:00.594] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:49:00.595] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:49:00.595] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:49:00.596] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:49:00.596] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:49:00.598] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:49:00.598] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:49:00.598] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:49:00.599] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:49:00.599] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:49:00.599] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:49:00.600] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:49:00.601] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:49:00.601] CDP: sent 19 chunks (110160 bytes total)
-[17:49:00.604] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:49:00.604] CDP: image set via blob URL (19 chunks)
-[17:49:00.605] CDP: CdpInjectCSS starting, port=9222
-[17:49:00.605] CDP: connecting to 127.0.0.1:9222 ...
-[17:49:00.606] CDP: connected, sending GET /json
-[17:49:05.608] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:49:05.609] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:49:05.610] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:49:05.610] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:49:05.611] CDP: dimming layer created
-[17:49:05.611] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:49:05.612] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:49:05.613] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:49:05.613] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:49:05.614] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:49:05.614] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:49:05.615] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:49:05.615] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:49:05.616] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:49:05.616] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:49:05.616] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:49:05.616] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:49:05.617] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:49:05.617] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:49:05.618] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:49:05.619] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:49:05.619] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:49:05.619] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:49:05.620] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:49:05.620] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:49:05.620] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:49:05.621] CDP: sent 19 chunks (110160 bytes total)
-[17:49:05.626] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:49:05.626] CDP: image set via blob URL (19 chunks)
-[17:49:05.626] CDP: CdpInjectCSS starting, port=9222
-[17:49:05.627] CDP: connecting to 127.0.0.1:9222 ...
-[17:49:05.627] CDP: connected, sending GET /json
-[17:49:10.640] CDP: found MATLAB desktop page via index-jsd.html in url
-[17:49:10.641] CDP: using page ws://127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:49:10.642] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/5569760317A008625CB7B5038219A93C
-[17:49:10.642] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
-[17:49:10.643] CDP: dimming layer created
-[17:49:10.643] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
-[17:49:10.643] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"8392325099651510230.2.1"}}}
-[17:49:10.644] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
-[17:49:10.644] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
-[17:49:10.645] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
-[17:49:10.645] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
-[17:49:10.646] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
-[17:49:10.646] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
-[17:49:10.646] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
-[17:49:10.646] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
-[17:49:10.647] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
-[17:49:10.647] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
-[17:49:10.649] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
-[17:49:10.650] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
-[17:49:10.650] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
-[17:49:10.650] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
-[17:49:10.651] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
-[17:49:10.651] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
-[17:49:10.651] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
-[17:49:10.651] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
-[17:49:10.652] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
-[17:49:10.652] CDP: sent 19 chunks (110160 bytes total)
-[17:49:10.655] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
-[17:49:10.657] CDP: image set via blob URL (19 chunks)
-[17:49:10.657] CDP: CdpInjectCSS starting, port=9222
-[17:49:10.657] CDP: connecting to 127.0.0.1:9222 ...
-[17:49:10.657] CDP: connected, sending GET /json
+[17:54:29.426] === MATLAB BG Patcher v2.0 ===
+[17:54:29.472] Config: scope=3 image='C:\Users\xvsu\Desktop\bg.png' opacity=22 dimming=22 scaleMode=3 speed=150 cdpPort=9222 cdpTarget='#commandWindowWrapper'
+[17:54:45.747] MATLAB not running, searching for matlab.exe...
+[17:54:45.748] Found matlab.exe at: D:\GNUMATLAB\matlab\bin\matlab.exe
+[17:54:45.748] Launching MATLAB: "D:\GNUMATLAB\matlab\bin\matlab.exe" --remote-debugging-port=9222
+[17:54:45.756] MATLAB launched, waiting for CDP port...
+[17:54:46.765] CDP: auto-detected port 9222
+[17:54:46.765] MATLAB CDP port detected after 500 ms
+[17:54:46.765] Entering Scope=3 CDP mode
+[17:54:46.765] CDP: CdpInjectCSS starting, port=9222
+[17:54:46.766] HTTP: loaded image image/jpeg (82619 bytes)
+[17:54:46.767] HTTP: image server started on 127.0.0.1:9221
+[17:54:46.873] CDP: connecting to 127.0.0.1:9222 ...
+[17:54:46.874] CDP: connected, sending GET /json
+[17:54:51.885] CDP: found MATLAB desktop page via index-jsd.html in url
+[17:54:51.885] CDP: using page ws://127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:54:51.886] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:54:51.887] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[17:54:51.887] CDP: dimming layer created
+[17:54:51.888] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
+[17:54:51.890] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"-70228071561227242.2.1"}}}
+[17:54:51.891] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
+[17:54:51.891] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
+[17:54:51.892] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
+[17:54:51.893] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
+[17:54:51.894] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
+[17:54:51.896] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
+[17:54:51.896] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
+[17:54:51.897] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
+[17:54:51.897] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
+[17:54:51.898] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
+[17:54:51.898] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
+[17:54:51.899] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
+[17:54:51.899] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
+[17:54:51.901] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
+[17:54:51.902] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
+[17:54:51.902] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
+[17:54:51.904] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
+[17:54:51.904] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
+[17:54:51.905] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
+[17:54:51.905] CDP: sent 19 chunks (110160 bytes total)
+[17:54:51.908] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
+[17:54:51.909] CDP: image set via blob URL (19 chunks)
+[17:54:51.909] CDP: first injection succeeded
+[17:54:51.911] CDP mode active: re-injecting CSS every 5s
+[17:54:56.905] CDP: CdpInjectCSS starting, port=9222
+[17:54:56.905] CDP: connecting to 127.0.0.1:9222 ...
+[17:54:56.905] CDP: connected, sending GET /json
+[17:55:01.914] CDP: found MATLAB desktop page via index-jsd.html in url
+[17:55:01.915] CDP: using page ws://127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:55:01.915] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:55:01.916] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[17:55:01.916] CDP: dimming layer created
+[17:55:01.916] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
+[17:55:01.917] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"-70228071561227242.2.1"}}}
+[17:55:01.918] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
+[17:55:01.918] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
+[17:55:01.918] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
+[17:55:01.920] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
+[17:55:01.920] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
+[17:55:01.921] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
+[17:55:01.921] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
+[17:55:01.922] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
+[17:55:01.922] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
+[17:55:01.923] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
+[17:55:01.924] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
+[17:55:01.924] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
+[17:55:01.925] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
+[17:55:01.925] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
+[17:55:01.925] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
+[17:55:01.925] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
+[17:55:01.926] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
+[17:55:01.926] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
+[17:55:01.927] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
+[17:55:01.927] CDP: sent 19 chunks (110160 bytes total)
+[17:55:01.931] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
+[17:55:01.931] CDP: image set via blob URL (19 chunks)
+[17:55:01.931] CDP: CdpInjectCSS starting, port=9222
+[17:55:01.932] CDP: connecting to 127.0.0.1:9222 ...
+[17:55:01.932] CDP: connected, sending GET /json
+[17:55:06.945] CDP: found MATLAB desktop page via index-jsd.html in url
+[17:55:06.945] CDP: using page ws://127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:55:06.947] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:55:06.948] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[17:55:06.948] CDP: dimming layer created
+[17:55:06.949] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
+[17:55:06.949] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"-70228071561227242.2.1"}}}
+[17:55:06.950] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
+[17:55:06.950] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
+[17:55:06.951] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
+[17:55:06.952] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
+[17:55:06.953] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
+[17:55:06.953] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
+[17:55:06.954] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
+[17:55:06.955] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
+[17:55:06.956] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
+[17:55:06.957] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
+[17:55:06.957] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
+[17:55:06.958] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
+[17:55:06.959] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
+[17:55:06.959] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
+[17:55:06.960] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
+[17:55:06.961] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
+[17:55:06.961] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
+[17:55:06.962] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
+[17:55:06.962] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
+[17:55:06.963] CDP: sent 19 chunks (110160 bytes total)
+[17:55:06.966] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
+[17:55:06.966] CDP: image set via blob URL (19 chunks)
+[17:55:06.966] CDP: CdpInjectCSS starting, port=9222
+[17:55:06.966] CDP: connecting to 127.0.0.1:9222 ...
+[17:55:06.967] CDP: connected, sending GET /json
+[17:55:11.975] CDP: found MATLAB desktop page via index-jsd.html in url
+[17:55:11.976] CDP: using page ws://127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:55:11.977] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:55:11.978] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[17:55:11.978] CDP: dimming layer created
+[17:55:11.978] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
+[17:55:11.979] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"-70228071561227242.2.1"}}}
+[17:55:11.979] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
+[17:55:11.980] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
+[17:55:11.982] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
+[17:55:11.982] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
+[17:55:11.983] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
+[17:55:11.984] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
+[17:55:11.985] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
+[17:55:11.985] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
+[17:55:11.986] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
+[17:55:11.987] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
+[17:55:11.988] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
+[17:55:11.988] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
+[17:55:11.989] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
+[17:55:11.990] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
+[17:55:11.990] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
+[17:55:11.991] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
+[17:55:11.991] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
+[17:55:11.991] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
+[17:55:11.993] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
+[17:55:11.993] CDP: sent 19 chunks (110160 bytes total)
+[17:55:11.996] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
+[17:55:11.997] CDP: image set via blob URL (19 chunks)
+[17:55:11.998] CDP: CdpInjectCSS starting, port=9222
+[17:55:11.998] CDP: connecting to 127.0.0.1:9222 ...
+[17:55:11.998] CDP: connected, sending GET /json
+[17:55:17.014] CDP: found MATLAB desktop page via index-jsd.html in url
+[17:55:17.015] CDP: using page ws://127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:55:17.016] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:55:17.017] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[17:55:17.017] CDP: dimming layer created
+[17:55:17.018] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
+[17:55:17.018] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"-70228071561227242.2.1"}}}
+[17:55:17.019] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
+[17:55:17.020] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
+[17:55:17.021] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
+[17:55:17.021] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
+[17:55:17.021] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
+[17:55:17.022] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
+[17:55:17.022] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
+[17:55:17.023] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
+[17:55:17.024] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
+[17:55:17.025] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
+[17:55:17.026] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
+[17:55:17.027] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
+[17:55:17.027] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
+[17:55:17.028] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
+[17:55:17.028] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
+[17:55:17.029] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
+[17:55:17.029] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
+[17:55:17.030] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
+[17:55:17.030] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
+[17:55:17.031] CDP: sent 19 chunks (110160 bytes total)
+[17:55:17.034] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
+[17:55:17.034] CDP: image set via blob URL (19 chunks)
+[17:55:17.034] CDP: CdpInjectCSS starting, port=9222
+[17:55:17.035] CDP: connecting to 127.0.0.1:9222 ...
+[17:55:17.035] CDP: connected, sending GET /json
+[17:55:22.043] CDP: found MATLAB desktop page via index-jsd.html in url
+[17:55:22.044] CDP: using page ws://127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:55:22.045] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:55:22.045] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[17:55:22.046] CDP: dimming layer created
+[17:55:22.046] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
+[17:55:22.047] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"-70228071561227242.2.1"}}}
+[17:55:22.048] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
+[17:55:22.048] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
+[17:55:22.049] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
+[17:55:22.050] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
+[17:55:22.050] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
+[17:55:22.052] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
+[17:55:22.052] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
+[17:55:22.053] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
+[17:55:22.053] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
+[17:55:22.054] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
+[17:55:22.055] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
+[17:55:22.055] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
+[17:55:22.055] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
+[17:55:22.057] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
+[17:55:22.058] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
+[17:55:22.058] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
+[17:55:22.059] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
+[17:55:22.060] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
+[17:55:22.060] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
+[17:55:22.060] CDP: sent 19 chunks (110160 bytes total)
+[17:55:22.063] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
+[17:55:22.063] CDP: image set via blob URL (19 chunks)
+[17:55:22.063] CDP: CdpInjectCSS starting, port=9222
+[17:55:22.064] CDP: connecting to 127.0.0.1:9222 ...
+[17:55:22.064] CDP: connected, sending GET /json
+[17:55:27.070] CDP: found MATLAB desktop page via index-jsd.html in url
+[17:55:27.070] CDP: using page ws://127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:55:27.071] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:55:27.074] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[17:55:27.074] CDP: dimming layer created
+[17:55:27.074] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
+[17:55:27.075] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"-70228071561227242.2.1"}}}
+[17:55:27.076] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
+[17:55:27.076] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
+[17:55:27.078] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
+[17:55:27.079] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
+[17:55:27.079] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
+[17:55:27.079] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
+[17:55:27.081] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
+[17:55:27.081] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
+[17:55:27.082] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
+[17:55:27.082] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
+[17:55:27.082] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
+[17:55:27.084] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
+[17:55:27.084] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
+[17:55:27.085] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
+[17:55:27.086] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
+[17:55:27.087] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
+[17:55:27.087] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
+[17:55:27.088] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
+[17:55:27.088] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
+[17:55:27.089] CDP: sent 19 chunks (110160 bytes total)
+[17:55:27.091] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
+[17:55:27.091] CDP: image set via blob URL (19 chunks)
+[17:55:27.093] CDP: CdpInjectCSS starting, port=9222
+[17:55:27.093] CDP: connecting to 127.0.0.1:9222 ...
+[17:55:27.093] CDP: connected, sending GET /json
+[17:55:32.096] CDP: found MATLAB desktop page via index-jsd.html in url
+[17:55:32.097] CDP: using page ws://127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:55:32.098] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:55:32.099] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[17:55:32.099] CDP: dimming layer created
+[17:55:32.099] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
+[17:55:32.100] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"-70228071561227242.2.1"}}}
+[17:55:32.101] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
+[17:55:32.102] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
+[17:55:32.103] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
+[17:55:32.104] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
+[17:55:32.104] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
+[17:55:32.105] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
+[17:55:32.106] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
+[17:55:32.107] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
+[17:55:32.107] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
+[17:55:32.108] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
+[17:55:32.109] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
+[17:55:32.109] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
+[17:55:32.110] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
+[17:55:32.111] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
+[17:55:32.111] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
+[17:55:32.112] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
+[17:55:32.113] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
+[17:55:32.113] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
+[17:55:32.114] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
+[17:55:32.114] CDP: sent 19 chunks (110160 bytes total)
+[17:55:32.117] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
+[17:55:32.118] CDP: image set via blob URL (19 chunks)
+[17:55:32.118] CDP: CdpInjectCSS starting, port=9222
+[17:55:32.119] CDP: connecting to 127.0.0.1:9222 ...
+[17:55:32.119] CDP: connected, sending GET /json
+[17:55:37.121] CDP: found MATLAB desktop page via index-jsd.html in url
+[17:55:37.121] CDP: using page ws://127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:55:37.123] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:55:37.123] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[17:55:37.124] CDP: dimming layer created
+[17:55:37.124] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
+[17:55:37.124] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"-70228071561227242.2.1"}}}
+[17:55:37.125] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
+[17:55:37.125] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
+[17:55:37.127] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
+[17:55:37.128] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
+[17:55:37.128] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
+[17:55:37.129] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
+[17:55:37.130] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
+[17:55:37.130] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
+[17:55:37.131] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
+[17:55:37.131] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
+[17:55:37.133] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
+[17:55:37.133] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
+[17:55:37.134] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
+[17:55:37.134] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
+[17:55:37.134] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
+[17:55:37.136] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
+[17:55:37.137] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
+[17:55:37.138] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
+[17:55:37.138] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
+[17:55:37.138] CDP: sent 19 chunks (110160 bytes total)
+[17:55:37.141] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
+[17:55:37.141] CDP: image set via blob URL (19 chunks)
+[17:55:37.141] CDP: CdpInjectCSS starting, port=9222
+[17:55:37.142] CDP: connecting to 127.0.0.1:9222 ...
+[17:55:37.142] CDP: connected, sending GET /json
+[17:55:42.153] CDP: found MATLAB desktop page via index-jsd.html in url
+[17:55:42.153] CDP: using page ws://127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:55:42.155] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:55:42.156] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[17:55:42.156] CDP: dimming layer created
+[17:55:42.156] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
+[17:55:42.157] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"-70228071561227242.2.1"}}}
+[17:55:42.158] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
+[17:55:42.159] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
+[17:55:42.159] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
+[17:55:42.160] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
+[17:55:42.161] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
+[17:55:42.161] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
+[17:55:42.163] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
+[17:55:42.164] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
+[17:55:42.165] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
+[17:55:42.166] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
+[17:55:42.167] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
+[17:55:42.168] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
+[17:55:42.169] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
+[17:55:42.170] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
+[17:55:42.171] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
+[17:55:42.171] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
+[17:55:42.173] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
+[17:55:42.174] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
+[17:55:42.174] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
+[17:55:42.174] CDP: sent 19 chunks (110160 bytes total)
+[17:55:42.177] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
+[17:55:42.177] CDP: image set via blob URL (19 chunks)
+[17:55:42.177] CDP: CdpInjectCSS starting, port=9222
+[17:55:42.179] CDP: connecting to 127.0.0.1:9222 ...
+[17:55:42.179] CDP: connected, sending GET /json
+[17:55:47.179] CDP: found MATLAB desktop page via index-jsd.html in url
+[17:55:47.180] CDP: using page ws://127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:55:47.182] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:55:47.182] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[17:55:47.183] CDP: dimming layer created
+[17:55:47.183] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
+[17:55:47.184] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"-70228071561227242.2.1"}}}
+[17:55:47.184] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
+[17:55:47.185] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
+[17:55:47.186] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
+[17:55:47.186] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
+[17:55:47.187] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
+[17:55:47.187] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
+[17:55:47.188] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
+[17:55:47.189] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
+[17:55:47.190] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
+[17:55:47.190] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
+[17:55:47.191] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
+[17:55:47.191] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
+[17:55:47.191] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
+[17:55:47.193] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
+[17:55:47.193] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
+[17:55:47.194] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
+[17:55:47.195] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
+[17:55:47.196] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
+[17:55:47.196] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
+[17:55:47.196] CDP: sent 19 chunks (110160 bytes total)
+[17:55:47.199] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
+[17:55:47.200] CDP: image set via blob URL (19 chunks)
+[17:55:47.200] CDP: CdpInjectCSS starting, port=9222
+[17:55:47.200] CDP: connecting to 127.0.0.1:9222 ...
+[17:55:47.201] CDP: connected, sending GET /json
+[17:55:52.212] CDP: found MATLAB desktop page via index-jsd.html in url
+[17:55:52.213] CDP: using page ws://127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:55:52.214] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:55:52.214] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[17:55:52.215] CDP: dimming layer created
+[17:55:52.215] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
+[17:55:52.216] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"-70228071561227242.2.1"}}}
+[17:55:52.217] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
+[17:55:52.217] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
+[17:55:52.218] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
+[17:55:52.219] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
+[17:55:52.221] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
+[17:55:52.221] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
+[17:55:52.222] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
+[17:55:52.222] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
+[17:55:52.223] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
+[17:55:52.224] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
+[17:55:52.224] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
+[17:55:52.224] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
+[17:55:52.225] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
+[17:55:52.225] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
+[17:55:52.226] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
+[17:55:52.227] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
+[17:55:52.227] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
+[17:55:52.228] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
+[17:55:52.228] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
+[17:55:52.229] CDP: sent 19 chunks (110160 bytes total)
+[17:55:52.232] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
+[17:55:52.232] CDP: image set via blob URL (19 chunks)
+[17:55:52.232] CDP: CdpInjectCSS starting, port=9222
+[17:55:52.232] CDP: connecting to 127.0.0.1:9222 ...
+[17:55:52.234] CDP: connected, sending GET /json
+[17:55:57.236] CDP: found MATLAB desktop page via index-jsd.html in url
+[17:55:57.236] CDP: using page ws://127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:55:57.238] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:55:57.239] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[17:55:57.239] CDP: dimming layer created
+[17:55:57.240] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
+[17:55:57.240] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"-70228071561227242.2.1"}}}
+[17:55:57.241] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
+[17:55:57.242] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
+[17:55:57.243] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
+[17:55:57.244] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
+[17:55:57.244] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
+[17:55:57.245] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
+[17:55:57.246] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
+[17:55:57.246] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
+[17:55:57.247] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
+[17:55:57.247] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
+[17:55:57.248] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
+[17:55:57.249] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
+[17:55:57.249] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
+[17:55:57.250] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
+[17:55:57.251] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
+[17:55:57.251] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
+[17:55:57.251] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
+[17:55:57.254] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
+[17:55:57.255] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
+[17:55:57.255] CDP: sent 19 chunks (110160 bytes total)
+[17:55:57.257] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
+[17:55:57.258] CDP: image set via blob URL (19 chunks)
+[17:55:57.258] CDP: CdpInjectCSS starting, port=9222
+[17:55:57.258] CDP: connecting to 127.0.0.1:9222 ...
+[17:55:57.258] CDP: connected, sending GET /json
+[17:56:02.270] CDP: found MATLAB desktop page via index-jsd.html in url
+[17:56:02.270] CDP: using page ws://127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:56:02.272] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:56:02.272] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[17:56:02.273] CDP: dimming layer created
+[17:56:02.273] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
+[17:56:02.273] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"-70228071561227242.2.1"}}}
+[17:56:02.274] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
+[17:56:02.275] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
+[17:56:02.275] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
+[17:56:02.276] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
+[17:56:02.277] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
+[17:56:02.277] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
+[17:56:02.278] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
+[17:56:02.278] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
+[17:56:02.279] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
+[17:56:02.280] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
+[17:56:02.280] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
+[17:56:02.281] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
+[17:56:02.281] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
+[17:56:02.283] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
+[17:56:02.283] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
+[17:56:02.284] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
+[17:56:02.284] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
+[17:56:02.285] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
+[17:56:02.286] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
+[17:56:02.286] CDP: sent 19 chunks (110160 bytes total)
+[17:56:02.289] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
+[17:56:02.289] CDP: image set via blob URL (19 chunks)
+[17:56:02.289] CDP: CdpInjectCSS starting, port=9222
+[17:56:02.289] CDP: connecting to 127.0.0.1:9222 ...
+[17:56:02.290] CDP: connected, sending GET /json
+[17:56:07.305] CDP: found MATLAB desktop page via index-jsd.html in url
+[17:56:07.306] CDP: using page ws://127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:56:07.307] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:56:07.307] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[17:56:07.308] CDP: dimming layer created
+[17:56:07.308] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
+[17:56:07.309] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"-70228071561227242.2.1"}}}
+[17:56:07.309] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
+[17:56:07.310] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
+[17:56:07.310] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
+[17:56:07.311] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
+[17:56:07.311] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
+[17:56:07.313] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
+[17:56:07.313] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
+[17:56:07.314] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
+[17:56:07.314] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
+[17:56:07.315] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
+[17:56:07.316] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
+[17:56:07.317] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
+[17:56:07.318] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
+[17:56:07.318] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
+[17:56:07.319] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
+[17:56:07.320] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
+[17:56:07.320] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
+[17:56:07.321] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
+[17:56:07.322] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
+[17:56:07.322] CDP: sent 19 chunks (110160 bytes total)
+[17:56:07.326] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
+[17:56:07.326] CDP: image set via blob URL (19 chunks)
+[17:56:07.326] CDP: CdpInjectCSS starting, port=9222
+[17:56:07.327] CDP: connecting to 127.0.0.1:9222 ...
+[17:56:07.327] CDP: connected, sending GET /json
+[17:56:12.339] CDP: found MATLAB desktop page via index-jsd.html in url
+[17:56:12.340] CDP: using page ws://127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:56:12.341] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:56:12.342] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[17:56:12.342] CDP: dimming layer created
+[17:56:12.343] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
+[17:56:12.343] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"-70228071561227242.2.1"}}}
+[17:56:12.344] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
+[17:56:12.345] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
+[17:56:12.345] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
+[17:56:12.346] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
+[17:56:12.347] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
+[17:56:12.348] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
+[17:56:12.348] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
+[17:56:12.349] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
+[17:56:12.350] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
+[17:56:12.350] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
+[17:56:12.351] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
+[17:56:12.351] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
+[17:56:12.352] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
+[17:56:12.352] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
+[17:56:12.353] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
+[17:56:12.354] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
+[17:56:12.354] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
+[17:56:12.356] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
+[17:56:12.356] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
+[17:56:12.356] CDP: sent 19 chunks (110160 bytes total)
+[17:56:12.359] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
+[17:56:12.360] CDP: image set via blob URL (19 chunks)
+[17:56:12.360] CDP: CdpInjectCSS starting, port=9222
+[17:56:12.360] CDP: connecting to 127.0.0.1:9222 ...
+[17:56:12.361] CDP: connected, sending GET /json
+[17:56:17.367] CDP: found MATLAB desktop page via index-jsd.html in url
+[17:56:17.368] CDP: using page ws://127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:56:17.369] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:56:17.370] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[17:56:17.370] CDP: dimming layer created
+[17:56:17.371] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
+[17:56:17.371] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"-70228071561227242.2.1"}}}
+[17:56:17.372] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
+[17:56:17.372] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
+[17:56:17.374] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
+[17:56:17.374] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
+[17:56:17.375] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
+[17:56:17.376] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
+[17:56:17.376] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
+[17:56:17.377] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
+[17:56:17.377] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
+[17:56:17.378] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
+[17:56:17.378] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
+[17:56:17.379] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
+[17:56:17.380] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
+[17:56:17.380] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
+[17:56:17.381] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
+[17:56:17.381] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
+[17:56:17.381] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
+[17:56:17.384] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
+[17:56:17.384] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
+[17:56:17.384] CDP: sent 19 chunks (110160 bytes total)
+[17:56:17.387] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
+[17:56:17.388] CDP: image set via blob URL (19 chunks)
+[17:56:17.388] CDP: CdpInjectCSS starting, port=9222
+[17:56:17.388] CDP: connecting to 127.0.0.1:9222 ...
+[17:56:17.389] CDP: connected, sending GET /json
+[17:56:22.393] CDP: found MATLAB desktop page via index-jsd.html in url
+[17:56:22.394] CDP: using page ws://127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:56:22.395] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:56:22.396] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[17:56:22.396] CDP: dimming layer created
+[17:56:22.396] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
+[17:56:22.398] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"-70228071561227242.2.1"}}}
+[17:56:22.398] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
+[17:56:22.399] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
+[17:56:22.400] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
+[17:56:22.400] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
+[17:56:22.401] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
+[17:56:22.402] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
+[17:56:22.402] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
+[17:56:22.403] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
+[17:56:22.403] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
+[17:56:22.404] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
+[17:56:22.404] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
+[17:56:22.405] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
+[17:56:22.406] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
+[17:56:22.406] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
+[17:56:22.407] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
+[17:56:22.408] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
+[17:56:22.409] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
+[17:56:22.409] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
+[17:56:22.410] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
+[17:56:22.410] CDP: sent 19 chunks (110160 bytes total)
+[17:56:22.413] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
+[17:56:22.413] CDP: image set via blob URL (19 chunks)
+[17:56:22.414] CDP: CdpInjectCSS starting, port=9222
+[17:56:22.414] CDP: connecting to 127.0.0.1:9222 ...
+[17:56:22.415] CDP: connected, sending GET /json
+[17:56:27.424] CDP: found MATLAB desktop page via index-jsd.html in url
+[17:56:27.425] CDP: using page ws://127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:56:27.426] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:56:27.426] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[17:56:27.427] CDP: dimming layer created
+[17:56:27.427] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
+[17:56:27.428] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"-70228071561227242.2.1"}}}
+[17:56:27.428] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
+[17:56:27.429] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
+[17:56:27.430] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
+[17:56:27.430] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
+[17:56:27.431] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
+[17:56:27.431] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
+[17:56:27.433] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
+[17:56:27.433] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
+[17:56:27.434] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
+[17:56:27.435] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
+[17:56:27.435] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
+[17:56:27.436] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
+[17:56:27.436] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
+[17:56:27.437] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
+[17:56:27.438] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
+[17:56:27.438] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
+[17:56:27.439] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
+[17:56:27.439] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
+[17:56:27.440] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
+[17:56:27.440] CDP: sent 19 chunks (110160 bytes total)
+[17:56:27.445] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
+[17:56:27.445] CDP: image set via blob URL (19 chunks)
+[17:56:27.445] CDP: CdpInjectCSS starting, port=9222
+[17:56:27.445] CDP: connecting to 127.0.0.1:9222 ...
+[17:56:27.446] CDP: connected, sending GET /json
+[17:56:32.457] CDP: found MATLAB desktop page via index-jsd.html in url
+[17:56:32.457] CDP: using page ws://127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:56:32.459] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:56:32.459] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[17:56:32.460] CDP: dimming layer created
+[17:56:32.460] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
+[17:56:32.460] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"-70228071561227242.2.1"}}}
+[17:56:32.461] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
+[17:56:32.462] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
+[17:56:32.462] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
+[17:56:32.463] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
+[17:56:32.463] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
+[17:56:32.463] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
+[17:56:32.465] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
+[17:56:32.465] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
+[17:56:32.466] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
+[17:56:32.466] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
+[17:56:32.468] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
+[17:56:32.468] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
+[17:56:32.469] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
+[17:56:32.469] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
+[17:56:32.471] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
+[17:56:32.471] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
+[17:56:32.472] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
+[17:56:32.473] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
+[17:56:32.473] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
+[17:56:32.473] CDP: sent 19 chunks (110160 bytes total)
+[17:56:32.476] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
+[17:56:32.476] CDP: image set via blob URL (19 chunks)
+[17:56:32.476] CDP: CdpInjectCSS starting, port=9222
+[17:56:32.478] CDP: connecting to 127.0.0.1:9222 ...
+[17:56:32.478] CDP: connected, sending GET /json
+[17:56:37.486] CDP: found MATLAB desktop page via index-jsd.html in url
+[17:56:37.486] CDP: using page ws://127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:56:37.488] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:56:37.489] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[17:56:37.489] CDP: dimming layer created
+[17:56:37.490] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
+[17:56:37.490] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"-70228071561227242.2.1"}}}
+[17:56:37.491] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
+[17:56:37.492] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
+[17:56:37.492] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
+[17:56:37.493] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
+[17:56:37.494] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
+[17:56:37.494] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
+[17:56:37.495] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
+[17:56:37.496] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
+[17:56:37.496] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
+[17:56:37.497] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
+[17:56:37.497] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
+[17:56:37.498] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
+[17:56:37.499] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
+[17:56:37.499] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
+[17:56:37.500] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
+[17:56:37.501] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
+[17:56:37.501] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
+[17:56:37.502] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
+[17:56:37.502] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
+[17:56:37.502] CDP: sent 19 chunks (110160 bytes total)
+[17:56:37.507] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
+[17:56:37.507] CDP: image set via blob URL (19 chunks)
+[17:56:37.507] CDP: CdpInjectCSS starting, port=9222
+[17:56:37.508] CDP: connecting to 127.0.0.1:9222 ...
+[17:56:37.508] CDP: connected, sending GET /json
+[17:56:42.516] CDP: found MATLAB desktop page via index-jsd.html in url
+[17:56:42.517] CDP: using page ws://127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:56:42.517] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:56:42.518] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[17:56:42.518] CDP: dimming layer created
+[17:56:42.520] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
+[17:56:42.520] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"-70228071561227242.2.1"}}}
+[17:56:42.521] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
+[17:56:42.522] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
+[17:56:42.522] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
+[17:56:42.523] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
+[17:56:42.523] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
+[17:56:42.525] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
+[17:56:42.525] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
+[17:56:42.526] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
+[17:56:42.527] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
+[17:56:42.528] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
+[17:56:42.528] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
+[17:56:42.529] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
+[17:56:42.529] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
+[17:56:42.530] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
+[17:56:42.531] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
+[17:56:42.531] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
+[17:56:42.532] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
+[17:56:42.532] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
+[17:56:42.533] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
+[17:56:42.533] CDP: sent 19 chunks (110160 bytes total)
+[17:56:42.537] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
+[17:56:42.537] CDP: image set via blob URL (19 chunks)
+[17:56:42.537] CDP: CdpInjectCSS starting, port=9222
+[17:56:42.538] CDP: connecting to 127.0.0.1:9222 ...
+[17:56:42.538] CDP: connected, sending GET /json
+[17:56:47.541] CDP: found MATLAB desktop page via index-jsd.html in url
+[17:56:47.541] CDP: using page ws://127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:56:47.544] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:56:47.544] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[17:56:47.545] CDP: dimming layer created
+[17:56:47.545] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
+[17:56:47.546] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"-70228071561227242.2.1"}}}
+[17:56:47.546] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
+[17:56:47.547] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
+[17:56:47.547] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
+[17:56:47.548] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
+[17:56:47.549] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
+[17:56:47.549] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
+[17:56:47.550] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
+[17:56:47.551] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
+[17:56:47.551] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
+[17:56:47.552] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
+[17:56:47.552] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
+[17:56:47.552] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
+[17:56:47.554] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
+[17:56:47.554] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
+[17:56:47.555] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
+[17:56:47.555] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
+[17:56:47.556] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
+[17:56:47.557] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
+[17:56:47.557] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
+[17:56:47.557] CDP: sent 19 chunks (110160 bytes total)
+[17:56:47.560] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
+[17:56:47.562] CDP: image set via blob URL (19 chunks)
+[17:56:47.562] CDP: CdpInjectCSS starting, port=9222
+[17:56:47.562] CDP: connecting to 127.0.0.1:9222 ...
+[17:56:47.563] CDP: connected, sending GET /json
+[17:56:52.575] CDP: found MATLAB desktop page via index-jsd.html in url
+[17:56:52.576] CDP: using page ws://127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:56:52.577] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:56:52.577] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[17:56:52.578] CDP: dimming layer created
+[17:56:52.578] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
+[17:56:52.579] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"-70228071561227242.2.1"}}}
+[17:56:52.579] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
+[17:56:52.580] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
+[17:56:52.580] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
+[17:56:52.581] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
+[17:56:52.582] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
+[17:56:52.582] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
+[17:56:52.583] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
+[17:56:52.584] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
+[17:56:52.585] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
+[17:56:52.585] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
+[17:56:52.586] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
+[17:56:52.586] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
+[17:56:52.587] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
+[17:56:52.588] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
+[17:56:52.588] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
+[17:56:52.589] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
+[17:56:52.590] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
+[17:56:52.590] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
+[17:56:52.590] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
+[17:56:52.592] CDP: sent 19 chunks (110160 bytes total)
+[17:56:52.595] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
+[17:56:52.596] CDP: image set via blob URL (19 chunks)
+[17:56:52.596] CDP: CdpInjectCSS starting, port=9222
+[17:56:52.596] CDP: connecting to 127.0.0.1:9222 ...
+[17:56:52.597] CDP: connected, sending GET /json
+[17:56:57.601] CDP: found MATLAB desktop page via index-jsd.html in url
+[17:56:57.602] CDP: using page ws://127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:56:57.603] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:56:57.604] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[17:56:57.604] CDP: dimming layer created
+[17:56:57.605] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
+[17:56:57.605] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"-70228071561227242.2.1"}}}
+[17:56:57.606] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
+[17:56:57.606] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
+[17:56:57.607] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
+[17:56:57.607] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
+[17:56:57.608] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
+[17:56:57.608] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
+[17:56:57.609] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
+[17:56:57.609] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
+[17:56:57.610] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
+[17:56:57.610] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
+[17:56:57.612] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
+[17:56:57.613] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
+[17:56:57.613] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
+[17:56:57.614] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
+[17:56:57.615] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
+[17:56:57.615] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
+[17:56:57.616] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
+[17:56:57.617] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
+[17:56:57.617] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
+[17:56:57.618] CDP: sent 19 chunks (110160 bytes total)
+[17:56:57.622] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
+[17:56:57.622] CDP: image set via blob URL (19 chunks)
+[17:56:57.623] CDP: CdpInjectCSS starting, port=9222
+[17:56:57.623] CDP: connecting to 127.0.0.1:9222 ...
+[17:56:57.624] CDP: connected, sending GET /json
+[17:57:02.626] CDP: found MATLAB desktop page via index-jsd.html in url
+[17:57:02.626] CDP: using page ws://127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:57:02.627] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/42EE527D972FD8BAD00737B94EC22734
+[17:57:02.628] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[17:57:02.628] CDP: dimming layer created
+[17:57:02.628] CDP: image 82619 bytes, base64 110160 bytes, sending in chunks...
+[17:57:02.629] CDP response (op=1): {"id":2,"result":{"result":{"type":"object","subtype":"array","className":"Array","description":"Array(0)","objectId":"-70228071561227242.2.1"}}}
+[17:57:02.630] CDP response (op=1): {"id":3,"result":{"result":{"type":"number","value":1,"description":"1"}}}
+[17:57:02.631] CDP response (op=1): {"id":4,"result":{"result":{"type":"number","value":2,"description":"2"}}}
+[17:57:02.632] CDP response (op=1): {"id":5,"result":{"result":{"type":"number","value":3,"description":"3"}}}
+[17:57:02.634] CDP response (op=1): {"id":6,"result":{"result":{"type":"number","value":4,"description":"4"}}}
+[17:57:02.635] CDP response (op=1): {"id":7,"result":{"result":{"type":"number","value":5,"description":"5"}}}
+[17:57:02.635] CDP response (op=1): {"id":8,"result":{"result":{"type":"number","value":6,"description":"6"}}}
+[17:57:02.636] CDP response (op=1): {"id":9,"result":{"result":{"type":"number","value":7,"description":"7"}}}
+[17:57:02.637] CDP response (op=1): {"id":10,"result":{"result":{"type":"number","value":8,"description":"8"}}}
+[17:57:02.637] CDP response (op=1): {"id":11,"result":{"result":{"type":"number","value":9,"description":"9"}}}
+[17:57:02.638] CDP response (op=1): {"id":12,"result":{"result":{"type":"number","value":10,"description":"10"}}}
+[17:57:02.640] CDP response (op=1): {"id":13,"result":{"result":{"type":"number","value":11,"description":"11"}}}
+[17:57:02.640] CDP response (op=1): {"id":14,"result":{"result":{"type":"number","value":12,"description":"12"}}}
+[17:57:02.641] CDP response (op=1): {"id":15,"result":{"result":{"type":"number","value":13,"description":"13"}}}
+[17:57:02.642] CDP response (op=1): {"id":16,"result":{"result":{"type":"number","value":14,"description":"14"}}}
+[17:57:02.642] CDP response (op=1): {"id":17,"result":{"result":{"type":"number","value":15,"description":"15"}}}
+[17:57:02.643] CDP response (op=1): {"id":18,"result":{"result":{"type":"number","value":16,"description":"16"}}}
+[17:57:02.643] CDP response (op=1): {"id":19,"result":{"result":{"type":"number","value":17,"description":"17"}}}
+[17:57:02.644] CDP response (op=1): {"id":20,"result":{"result":{"type":"number","value":18,"description":"18"}}}
+[17:57:02.645] CDP response (op=1): {"id":21,"result":{"result":{"type":"number","value":19,"description":"19"}}}
+[17:57:02.645] CDP: sent 19 chunks (110160 bytes total)
+[17:57:02.649] CDP response (op=1): {"id":22,"result":{"result":{"type":"undefined"}}}
+[17:57:02.649] CDP: image set via blob URL (19 chunks)
+[17:57:02.650] CDP: CdpInjectCSS starting, port=9222
+[17:57:02.650] CDP: connecting to 127.0.0.1:9222 ...
+[17:57:02.651] CDP: connected, sending GET /json
