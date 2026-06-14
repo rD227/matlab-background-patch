@@ -1164,28 +1164,30 @@ static bool CdpInjectCSS()
     _snprintf(opacityStr, sizeof(opacityStr), "%.2f", g_cfg.opacity / 100.0);
     _snprintf(dimmingStr, sizeof(dimmingStr), "%.2f", g_cfg.dimming / 100.0);
 
-    // 4. Build the JS expression for the dimming overlay + image placeholder
-    //    Image data will be sent in chunks via separate CDP commands below
+    // 4. Build the JS expression for creating overlay elements (once).
+    //    Subsequent re-injections only update img.src, no remove/recreate.
     std::string jsLayer;
     jsLayer += "(function(){";
     jsLayer += "var w=document.querySelector('"; jsLayer += cssSelector; jsLayer += "');";
     jsLayer += "if(!w)return;";
-    jsLayer += "var o=document.getElementById('matlab_bg_img');if(o)o.remove();";
-    jsLayer += "o=document.getElementById('matlab_bg_dim');if(o)o.remove();";
     jsLayer += "if(getComputedStyle(w).position==='static')w.style.position='relative';";
-    // Dimming layer (instant, no network)
-    jsLayer += "var dim=document.createElement('div');dim.id='matlab_bg_dim';";
+    // Dimming layer — create only if not already present
+    jsLayer += "var dim=document.getElementById('matlab_bg_dim');";
+    jsLayer += "if(!dim){";
+    jsLayer += "dim=document.createElement('div');dim.id='matlab_bg_dim';";
     jsLayer += "dim.style.cssText='position:absolute;top:0;left:0;width:100%;height:100%;"
                "background:black;opacity:"; jsLayer += dimmingStr; jsLayer += ";"
                "z-index:1;pointer-events:none';";
-    jsLayer += "w.appendChild(dim);";
-    // Placeholder img element (src set later via chunks)
-    jsLayer += "var img=document.createElement('img');img.id='matlab_bg_img';";
+    jsLayer += "w.appendChild(dim);}";
+    // Image layer — create only if not already present
+    jsLayer += "var img=document.getElementById('matlab_bg_img');";
+    jsLayer += "if(!img){";
+    jsLayer += "img=document.createElement('img');img.id='matlab_bg_img';";
     jsLayer += "img.style.cssText='position:absolute;top:0;left:0;width:100%;height:100%;"
                "object-fit:"; jsLayer += objFit; jsLayer += ";"
                "object-position:center;opacity:"; jsLayer += opacityStr; jsLayer += ";"
                "z-index:0;pointer-events:none';";
-    jsLayer += "w.appendChild(img);";
+    jsLayer += "w.appendChild(img);}";
     jsLayer += "})()";
 
     // Build CDP command for layer creation (id=1)
@@ -1308,13 +1310,6 @@ static bool CdpInjectCSS()
     return true;
 }
 
-// ─── CDP Timer Callback ────────────────────────────────────────────────
-
-static void CALLBACK CdpTimerProc(HWND hwnd, UINT, UINT_PTR, DWORD)
-{
-    CdpInjectCSS();
-}
-
 // ─── Main ─────────────────────────────────────────────────────────────
 
 int WINAPI wWinMain(HINSTANCE, HINSTANCE, PWSTR, int)
@@ -1347,15 +1342,125 @@ int WINAPI wWinMain(HINSTANCE, HINSTANCE, PWSTR, int)
         return 1;
     }
 
-    // ── Scope=3: CDP CSS Injection ──────────────────────────────────
+    // ── Scope=3: Auto-launch MATLAB if needed ──────────────────────
     if (g_cfg.scope == 3) {
+        HANDLE hMatlabProc = nullptr;  // keep open to monitor process exit
+
+        // Quick single-port check
+        auto IsPortOpen = [](int pt) -> bool {
+            WSADATA wsa;
+            WSAStartup(MAKEWORD(2, 2), &wsa);
+            SOCKET s = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+            if (s == INVALID_SOCKET) { WSACleanup(); return false; }
+            int to = 500;
+            setsockopt(s, SOL_SOCKET, SO_SNDTIMEO, (char*)&to, sizeof(to));
+            SOCKADDR_IN addr = {};
+            addr.sin_family = AF_INET;
+            addr.sin_port   = htons((u_short)pt);
+            inet_pton(AF_INET, "127.0.0.1", &addr.sin_addr);
+            int ok = connect(s, (SOCKADDR*)&addr, sizeof(addr));
+            closesocket(s);
+            WSACleanup();
+            return ok == 0;
+        };
+
+        int checkPort = (g_cfg.cdpPort > 0) ? g_cfg.cdpPort : 9222;
+        bool matlabRunning = IsPortOpen(checkPort);
+
+        if (!matlabRunning) {
+            Log(L"MATLAB not running, searching for matlab.exe...");
+
+            // Search up 4 levels from our directory
+            WCHAR matlabPath[MAX_PATH] = {};
+            {
+                WCHAR searchDir[MAX_PATH];
+                GetModuleFileNameW(nullptr, searchDir, MAX_PATH);
+                WCHAR *lastSlash = wcsrchr(searchDir, L'\\');
+                if (lastSlash) *lastSlash = L'\0';
+
+                for (int level = 0; level < 5 && !matlabPath[0]; level++) {
+                    WCHAR test[MAX_PATH];
+                    wsprintfW(test, L"%s\\matlab.exe", searchDir);
+                    if (GetFileAttributesW(test) != INVALID_FILE_ATTRIBUTES)
+                        wcscpy(matlabPath, test);
+                    else {
+                        wsprintfW(test, L"%s\\bin\\matlab.exe", searchDir);
+                        if (GetFileAttributesW(test) != INVALID_FILE_ATTRIBUTES)
+                            wcscpy(matlabPath, test);
+                    }
+                    if (matlabPath[0]) break;
+                    WCHAR *ps = wcsrchr(searchDir, L'\\');
+                    if (!ps) break;
+                    *ps = L'\0';
+                }
+            }
+
+            if (matlabPath[0]) {
+                Log(L"Found: %s", matlabPath);
+
+                int dbgPort = (g_cfg.cdpPort > 0) ? g_cfg.cdpPort : 9222;
+
+                // Build custom environment block with MW_CEF_STARTUP_OPTIONS
+                std::wstring envBlock;
+                {
+                    LPCWCH orig = GetEnvironmentStringsW();
+                    LPCWCH p = orig;
+                    while (*p) {
+                        size_t len = wcslen(p);
+                        if (wcsncmp(p, L"MW_CEF_STARTUP_OPTIONS=", 24) != 0) {
+                            envBlock.append(p, len);
+                            envBlock += L'\0';
+                        }
+                        p += len + 1;
+                    }
+                    FreeEnvironmentStringsW((LPWCH)orig);
+                    WCHAR envOpt[128];
+                    wsprintfW(envOpt, L"MW_CEF_STARTUP_OPTIONS=--remote-debugging-port=%d", dbgPort);
+                    envBlock += envOpt;
+                    envBlock += L'\0';
+                    envBlock += L'\0';  // final terminator
+                }
+
+                WCHAR cmdLine[MAX_PATH + 128];
+                wsprintfW(cmdLine, L"\"%s\" --remote-debugging-port=%d", matlabPath, dbgPort);
+
+                STARTUPINFOW si = { sizeof(si) };
+                PROCESS_INFORMATION pi = {};
+                si.dwFlags = STARTF_USESHOWWINDOW;
+                si.wShowWindow = SW_SHOW;
+
+                Log(L"Launching MATLAB (with CDP env var)...");
+                if (CreateProcessW(nullptr, cmdLine,
+                        nullptr, nullptr, FALSE,
+                        CREATE_UNICODE_ENVIRONMENT,
+                        (LPVOID)envBlock.c_str(),
+                        nullptr, &si, &pi)) {
+                    hMatlabProc = pi.hProcess;  // keep for monitoring
+                    CloseHandle(pi.hThread);
+                    // Wait up to 90s for CDP port
+                    for (int i = 0; i < 180 && !matlabRunning; i++) {
+                        Sleep(500);
+                        matlabRunning = IsPortOpen(checkPort);
+                    }
+                    if (matlabRunning)
+                        Log(L"MATLAB CDP port %d is ready", checkPort);
+                    else
+                        Log(L"CDP port never opened (env var may not have worked)");
+                } else {
+                    Log(L"Failed to launch MATLAB: %d", GetLastError());
+                }
+            } else {
+                Log(L"matlab.exe not found. Start MATLAB manually.");
+            }
+        } else {
+            Log(L"MATLAB already running (port %d)", checkPort);
+        }
+
         Log(L"Entering Scope=3 CDP mode");
-        // Inject CSS immediately
         bool ok = CdpInjectCSS();
         Log(L"CDP: first injection %s", ok ? L"succeeded" : L"FAILED");
 
-        // Create a hidden helper window for the re-injection timer.
-        // We need a window handle for SetTimer + GetMessage message pump.
+        // Create hidden helper window for timer
         WNDCLASSW wc = {};
         wc.lpfnWndProc   = DefWindowProcW;
         wc.hInstance     = GetModuleHandleW(nullptr);
@@ -1367,8 +1472,20 @@ int WINAPI wWinMain(HINSTANCE, HINSTANCE, PWSTR, int)
             0, L"MATLAB_BG_CdpHelper", L"", WS_POPUP,
             0, 0, 0, 0, nullptr, nullptr, GetModuleHandleW(nullptr), nullptr);
 
-        // Re-inject every 5 seconds in case MATLAB restarts
-        SetTimer(hwndHelper, g_timerId, 5000, CdpTimerProc);
+        // Store MATLAB process handle in window userdata for timer callback
+        SetWindowLongPtrW(hwndHelper, GWLP_USERDATA, (LONG_PTR)hMatlabProc);
+
+        // Timer: re-inject CSS every 5s; also checks if MATLAB exited
+        SetTimer(hwndHelper, g_timerId, 5000,
+            [](HWND hwnd, UINT, UINT_PTR, DWORD) {
+                HANDLE hProc = (HANDLE)GetWindowLongPtrW(hwnd, GWLP_USERDATA);
+                if (hProc && WaitForSingleObject(hProc, 0) == WAIT_OBJECT_0) {
+                    Log(L"MATLAB process exited, shutting down");
+                    PostQuitMessage(0);
+                    return;
+                }
+                CdpInjectCSS();
+            });
 
         Log(L"CDP mode active: re-injecting CSS every 5s");
 
@@ -1380,6 +1497,8 @@ int WINAPI wWinMain(HINSTANCE, HINSTANCE, PWSTR, int)
 
         KillTimer(hwndHelper, g_timerId);
         DestroyWindow(hwndHelper);
+        // Close remaining handles
+        if (hMatlabProc) CloseHandle(hMatlabProc);
         if (g_httpRunning) {
             g_httpRunning = false;
             WaitForSingleObject(g_hHttpThread, 3000);
