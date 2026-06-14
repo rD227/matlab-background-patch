@@ -1,47 +1,19 @@
-[17:58:00.575] === MATLAB BG Patcher v1.0 ===
-[17:58:00.613] Config: image='C:\Users\xvsu\Desktop\bg.png' opacity=25 dimming=0 scaleMode=1
-[17:58:00.618] Overlay created: hwnd=0x00000000003916AE
-[17:58:00.626] No MATLAB process found (checked MATLAB.exe, MATLABWindow.exe).
-[17:58:00.626] Is MATLAB running? Start MATLAB first, then run matlab_bg.exe.
-[17:58:01.143] No MATLAB process found (checked MATLAB.exe, MATLABWindow.exe).
-[17:58:01.144] Is MATLAB running? Start MATLAB first, then run matlab_bg.exe.
-[17:58:01.660] No MATLAB process found (checked MATLAB.exe, MATLABWindow.exe).
-[17:58:01.660] Is MATLAB running? Start MATLAB first, then run matlab_bg.exe.
-[17:58:02.174] No MATLAB process found (checked MATLAB.exe, MATLABWindow.exe).
-[17:58:02.174] Is MATLAB running? Start MATLAB first, then run matlab_bg.exe.
-[17:58:02.687] No MATLAB process found (checked MATLAB.exe, MATLABWindow.exe).
-[17:58:02.687] Is MATLAB running? Start MATLAB first, then run matlab_bg.exe.
-[17:58:03.202] No MATLAB process found (checked MATLAB.exe, MATLABWindow.exe).
-[17:58:03.203] Is MATLAB running? Start MATLAB first, then run matlab_bg.exe.
-[17:58:03.719] No MATLAB process found (checked MATLAB.exe, MATLABWindow.exe).
-[17:58:03.720] Is MATLAB running? Start MATLAB first, then run matlab_bg.exe.
-[17:58:04.234] No MATLAB process found (checked MATLAB.exe, MATLABWindow.exe).
-[17:58:04.235] Is MATLAB running? Start MATLAB first, then run matlab_bg.exe.
-[17:58:04.749] No MATLAB process found (checked MATLAB.exe, MATLABWindow.exe).
-[17:58:04.749] Is MATLAB running? Start MATLAB first, then run matlab_bg.exe.
-[17:58:05.264] No MATLAB process found (checked MATLAB.exe, MATLABWindow.exe).
-[17:58:05.265] Is MATLAB running? Start MATLAB first, then run matlab_bg.exe.
-[17:58:05.778] No MATLAB process found (checked MATLAB.exe, MATLABWindow.exe).
-[17:58:05.778] Is MATLAB running? Start MATLAB first, then run matlab_bg.exe.
-[17:58:06.294] No MATLAB process found (checked MATLAB.exe, MATLABWindow.exe).
-[17:58:06.295] Is MATLAB running? Start MATLAB first, then run matlab_bg.exe.
-[17:58:06.808] No MATLAB process found (checked MATLAB.exe, MATLABWindow.exe).
-[17:58:06.808] Is MATLAB running? Start MATLAB first, then run matlab_bg.exe.
-[17:58:07.326] No MATLAB process found (checked MATLAB.exe, MATLABWindow.exe).
-[17:58:07.326] Is MATLAB running? Start MATLAB first, then run matlab_bg.exe.
-[17:58:07.841] No MATLAB process found (checked MATLAB.exe, MATLABWindow.exe).
-[17:58:07.842] Is MATLAB running? Start MATLAB first, then run matlab_bg.exe.
-[17:58:08.360] No MATLAB process found (checked MATLAB.exe, MATLABWindow.exe).
-[17:58:08.361] Is MATLAB running? Start MATLAB first, then run matlab_bg.exe.
-[17:58:08.877] No MATLAB process found (checked MATLAB.exe, MATLABWindow.exe).
-[17:58:08.878] Is MATLAB running? Start MATLAB first, then run matlab_bg.exe.
-[17:58:09.391] No MATLAB process found (checked MATLAB.exe, MATLABWindow.exe).
-[17:58:09.391] Is MATLAB running? Start MATLAB first, then run matlab_bg.exe.
-[17:58:09.910] MATLAB PIDs found: 33820 21628 — scanning windows...
-[17:58:09.913]   [scan] hwnd=0x00000000000617A6 class='ConsoleWindowClass' title='MATLAB R2025a' exe=matlab.exe rect=(-21333,-21333,-21175,-21307)
-[17:58:09.914] Selected MATLAB window: hwnd=0x00000000000617A6 class='ConsoleWindowClass' title='MATLAB R2025a' pid=33820 rect=(-21333,-21333,-21175,-21307) area=4108
-[17:58:09.915] WinEvent hook installed for thread 3896
-[17:58:09.923] Image loaded: C:\Users\xvsu\Desktop\bg.png (1065 x 824)
-[17:58:10.923] MATLAB PIDs found: 21628 34308 — scanning windows...
-[17:58:10.924]   [scan] hwnd=0x00000000002E0DD2 class='WindowClass' title='MATLAB' exe=MATLAB.exe rect=(88,54,1553,979)
-[17:58:10.926] Selected MATLAB window: hwnd=0x00000000002E0DD2 class='WindowClass' title='MATLAB' pid=21628 rect=(88,54,1553,979) area=1355125
+[15:49:43.981] === MATLAB BG Patcher v2.0 ===
+[15:49:44.029] Config: scope=3 image='C:\Users\xvsu\Desktop\bg.png' opacity=44 dimming=0 scaleMode=3 speed=150 cdpPort=9222 cdpTarget='#commandWindowWrapper'
+[15:49:44.029] Entering Scope=3 CDP mode
+[15:49:44.029] CDP: CdpInjectCSS starting, port=9222
+[15:49:44.031] CDP: connecting to 127.0.0.1:9222 ...
+[15:49:44.031] CDP: connected, sending GET /json
+[15:49:49.039] CDP: found MATLAB desktop page via index-jsd.html in url
+[15:49:49.039] CDP: using page ws://127.0.0.1:9222/devtools/page/0A14FFD72B1211D29F4D8DDBE84284DC
+[15:49:49.041] CDP: WebSocket connected to 127.0.0.1:9222/devtools/page/0A14FFD72B1211D29F4D8DDBE84284DC
+[15:49:49.041] CDP: CSS base64 (688 bytes): I2NvbW1hbmRXaW5kb3dXcmFwcGVyIHsgcG9zaXRpb246IHJlbGF0aXZlOyB9ICNjb21tYW5kV2luZG93V3JhcHBlcjo6YmVmb3JlIHsgY29udGVudDogJyc7IHBvc2l0aW9uOiBhYnNvbHV0ZTsgdG9wOiAwOyBsZWZ0OiAwOyByaWdodDogMDsgYm90dG9tOiAwOyBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJ2ZpbGU6Ly8vQzovVXNlcnMveHZzdS9EZXNrdG9wL2JnLnBuZycpOyBiYWNrZ3JvdW5kLXNpemU6IGF1dG87IGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjsgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDsgb3BhY2l0eTogMC40NDsgei1pbmRleDogMDsgcG9pbnRlci1ldmVudHM6IG5vbmU7IH0gI2NvbW1hbmRXaW5kb3dXcmFwcGVyOjphZnRlciB7IGNvbnRlbnQ6ICcnOyBwb3NpdGlvbjogYWJzb2x1dGU7IHRvcDogMDsgbGVmdDogMDsgcmlnaHQ6IDA7IGJvdHRvbTogMDsgYmFja2dyb3VuZDogYmxhY2s7IG9wYWNpdHk6IDAuMDA7IHotaW5kZXg6IDE7IHBvaW50ZXItZXZlbnRzOiBub25lOyB9
+[15:49:49.041] CDP: cmd hex[0-79]: 7B 22 69 64 22 3A 31 2C 22 6D 65 74 68 6F 64 22 3A 22 52 75 6E 74 69 6D 65 2E 65 76 61 6C 75 61 74 65 22 2C 22 70 61 72 61 6D 73 22 3A 7B 22 65 78 70 72 65 73 73 69 6F 6E 22 3A 22 28 66 75 6E 63 74 69 6F 6E 28 29 7B 76 61 72 20 73 3D 64 6F 
+[15:49:49.041] CDP: injecting CSS for target '#commandWindowWrapper' (selector='#commandWindowWrapper')
+[15:49:49.043] CDP response (op=1): {"id":1,"result":{"result":{"type":"undefined"}}}
+[15:49:49.043] CDP: CSS injected successfully (951 bytes)
+[15:49:49.044] CDP: first injection succeeded
+[15:49:49.045] CDP mode active: re-injecting CSS every 5s
+[15:49:54.050] CDP: CdpInjectCSS starting, port=9222
+[15:49:54.052] CDP: connecting to 127.0.0.1:9222 ...
+[15:49:54.052] CDP: connected, sending GET /json

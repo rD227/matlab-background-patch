@@ -12,7 +12,7 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b 1
 )
 
-g++ -O2 -static -mwindows -municode matlab_bg.cpp -o matlab_bg.exe -ldwmapi -luser32 -lgdi32 -lgdiplus -lole32 -lcomctl32 2>&1
+g++ -O2 -static -mwindows -municode matlab_bg.cpp -o matlab_bg.exe -ldwmapi -luser32 -lgdi32 -lgdiplus -lole32 -lcomctl32 -lws2_32 2>&1
 
 if %ERRORLEVEL% EQU 0 (
     echo ==========================================
