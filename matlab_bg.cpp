@@ -68,6 +68,7 @@ struct Config {
     int   cdpPort   = 0;    // CDP debug port (0=auto-detect 9222-9229)
     WCHAR cdpTarget[128] = L"#commandWindowWrapper"; // CSS selector for Scope=3
     int   httpPort  = 9221; // HTTP image server port for Scope=3
+    int   debugLog  = 1;    // Write log file? 0=no, 1=yes
 };
 
 // ─── Globals ──────────────────────────────────────────────────────────
@@ -99,7 +100,6 @@ static void          RepaintOverlay(HDC hdcScreen = nullptr);
 // ─── Logging ──────────────────────────────────────────────────────────
 
 static WCHAR g_logPath[MAX_PATH] = {};
-static bool  g_logFile = true;
 
 static void InitLog()
 {
@@ -127,7 +127,7 @@ static void Log(const WCHAR *fmt, ...)
     wsprintfW(ts, L"[%02d:%02d:%02d.%03d] ",
               st.wHour, st.wMinute, st.wSecond, st.wMilliseconds);
 
-    if (g_logFile) {
+    if (g_cfg.debugLog) {
         HANDLE hFile = CreateFileW(g_logPath, FILE_APPEND_DATA,
                                     FILE_SHARE_READ | FILE_SHARE_WRITE,
                                     nullptr, OPEN_ALWAYS,
@@ -173,6 +173,7 @@ static void LoadConfig()
     g_cfg.speed     = GetPrivateProfileIntW(L"Background", L"Speed",     150, iniPath.c_str());
     g_cfg.cdpPort   = GetPrivateProfileIntW(L"Background", L"CdpPort",   0,   iniPath.c_str());
     g_cfg.httpPort  = GetPrivateProfileIntW(L"Background", L"HttpPort",  9221, iniPath.c_str());
+    g_cfg.debugLog  = GetPrivateProfileIntW(L"Background", L"DebugLog",  1,    iniPath.c_str());
     GetPrivateProfileStringW(L"Background", L"CdpTarget", L"#commandWindowWrapper", g_cfg.cdpTarget, 128, iniPath.c_str());
 
     // Clamp
@@ -201,9 +202,10 @@ static void LoadConfig()
         LocalFree(argv);
     }
 
-    Log(L"Config: scope=%d image='%s' opacity=%d dimming=%d scaleMode=%d speed=%d cdpPort=%d cdpTarget='%s'",
+    Log(L"Config: scope=%d image='%s' opacity=%d dimming=%d scaleMode=%d speed=%d"
+        L" cdpPort=%d cdpTarget='%s' debugLog=%d httpPort=%d",
         g_cfg.scope, g_cfg.imagePath, g_cfg.opacity, g_cfg.dimming, g_cfg.scaleMode, g_cfg.speed,
-        g_cfg.cdpPort, g_cfg.cdpTarget);
+        g_cfg.cdpPort, g_cfg.cdpTarget, g_cfg.debugLog, g_cfg.httpPort);
 }
 
 // ─── Process detection ────────────────────────────────────────────────
