@@ -1166,30 +1166,31 @@ static bool CdpInjectCSS()
     _snprintf(opacityStr, sizeof(opacityStr), "%.2f", g_cfg.opacity / 100.0);
     _snprintf(dimmingStr, sizeof(dimmingStr), "%.2f", g_cfg.dimming / 100.0);
 
-    // 4. Build the JS expression for creating overlay elements (once).
+    // 4. Build the JS expression for creating overlay elements on ALL matching targets.
+    //    Uses querySelectorAll to support comma-separated selectors.
     //    Subsequent re-injections only update img.src, no remove/recreate.
     std::string jsLayer;
     jsLayer += "(function(){";
-    jsLayer += "var w=document.querySelector('"; jsLayer += cssSelector; jsLayer += "');";
-    jsLayer += "if(!w)return;";
+    jsLayer += "var els=document.querySelectorAll('"; jsLayer += cssSelector; jsLayer += "');";
+    jsLayer += "for(var i=0;i<els.length;i++){";
+    jsLayer += "var w=els[i];";
     jsLayer += "if(getComputedStyle(w).position==='static')w.style.position='relative';";
-    // Dimming layer — create only if not already present
-    jsLayer += "var dim=document.getElementById('matlab_bg_dim');";
-    jsLayer += "if(!dim){";
-    jsLayer += "dim=document.createElement('div');dim.id='matlab_bg_dim';";
+    // Dimming layer — create only if not already present in this element
+    jsLayer += "if(!w.querySelector('.matlab-bg-dim')){";
+    jsLayer += "var dim=document.createElement('div');dim.className='matlab-bg-dim';";
     jsLayer += "dim.style.cssText='position:absolute;top:0;left:0;width:100%;height:100%;"
                "background:black;opacity:"; jsLayer += dimmingStr; jsLayer += ";"
                "z-index:1;pointer-events:none';";
     jsLayer += "w.appendChild(dim);}";
-    // Image layer — create only if not already present
-    jsLayer += "var img=document.getElementById('matlab_bg_img');";
-    jsLayer += "if(!img){";
-    jsLayer += "img=document.createElement('img');img.id='matlab_bg_img';";
+    // Image layer — create only if not already present in this element
+    jsLayer += "if(!w.querySelector('.matlab-bg-img')){";
+    jsLayer += "var img=document.createElement('img');img.className='matlab-bg-img';";
     jsLayer += "img.style.cssText='position:absolute;top:0;left:0;width:100%;height:100%;"
                "object-fit:"; jsLayer += objFit; jsLayer += ";"
                "object-position:center;opacity:"; jsLayer += opacityStr; jsLayer += ";"
                "z-index:0;pointer-events:none';";
     jsLayer += "w.appendChild(img);}";
+    jsLayer += "}";  // end for
     jsLayer += "})()";
 
     // Build CDP command for layer creation (id=1)
@@ -1272,7 +1273,7 @@ static bool CdpInjectCSS()
 
     Log(L"CDP: sent %d chunks (%d bytes total)", chunkCount, (int)imgB64.size());
 
-    // 7. Final command: assemble blob URL and set img.src
+    // 7. Final command: assemble blob URL and set img.src on ALL overlays
     std::string jsFinal;
     jsFinal += "(function(){";
     jsFinal += "var b64=window._mbgC.join('');";
@@ -1281,10 +1282,13 @@ static bool CdpInjectCSS()
     jsFinal += "for(var i=0;i<bin.length;i++)bytes[i]=bin.charCodeAt(i);";
     jsFinal += "var blob=new Blob([bytes],{type:'"; jsFinal += imgMime; jsFinal += "'});";
     jsFinal += "var url=URL.createObjectURL(blob);";
-    jsFinal += "var img=document.getElementById('matlab_bg_img');";
-    jsFinal += "if(img){var oldUrl=img.src;img.src=url;"
-               "if(oldUrl&&oldUrl.indexOf('blob:')===0)URL.revokeObjectURL(oldUrl);}";
-    jsFinal += "window._mbgC=null;";  // free memory
+    jsFinal += "var imgs=document.querySelectorAll('.matlab-bg-img');";
+    jsFinal += "for(var j=0;j<imgs.length;j++){";
+    jsFinal += "var oldUrl=imgs[j].src;";
+    jsFinal += "imgs[j].src=url;";
+    jsFinal += "if(oldUrl&&oldUrl.indexOf('blob:')===0)URL.revokeObjectURL(oldUrl);";
+    jsFinal += "}";
+    jsFinal += "window._mbgC=null;";
     jsFinal += "})()";
 
     std::string finalCmd;
