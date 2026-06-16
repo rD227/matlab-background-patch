@@ -42,6 +42,8 @@ cd matlab-background-patch
 
 然后运行 `build.bat`（需要 MinGW-w64 的 g++ 在 PATH 中）。
 
+**（它不会生成ini文件！**
+
 ## 使用方法
 
 ### 方法 1：INI 配置文件
