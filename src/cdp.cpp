@@ -246,11 +246,11 @@ static bool CdpWsSend(SOCKET s, const char *json)
     return send(s, (char*)packet.data(), (int)packet.size(), 0) == (int)packet.size();
 }
 
-static void CdpWsRecv(SOCKET s)
+static std::string CdpWsRecv(SOCKET s)
 {
     BYTE hdr[2];
     int n = recv(s, (char*)hdr, 2, 0);
-    if (n < 2) return;
+    if (n < 2) return "";
     BYTE opcode = hdr[0] & 0x0F;
     bool masked = (hdr[1] & 0x80) != 0;
     int len = hdr[1] & 0x7F;
@@ -261,11 +261,16 @@ static void CdpWsRecv(SOCKET s)
     if (masked) recv(s, (char*)maskKey, 4, 0);
 
     std::vector<char> payload(len + 1);
-    if (len > 0) recv(s, payload.data(), len, 0);
+    int got = 0;
+    while (got < len) {
+        int r = recv(s, payload.data() + got, len - got, 0);
+        if (r <= 0) break;
+        got += r;
+    }
     for (int i = 0; i < len; i++) payload[i] ^= maskKey[i % 4];
     payload[len] = '\0';
 
-    Log(L"CDP response (op=%d): %hs", opcode, payload.data());
+    return std::string(payload.data(), len);
 }
 
 // ─── Auto-detect CDP port ────────────────────────────────────────────
@@ -495,10 +500,14 @@ bool CdpInjectCSS()
                "z-index:0;pointer-events:none';";
     jsLayer += "w.appendChild(img);}";
     jsLayer += "}";
+    // Count overlays that still need a real image (src not yet a blob: URL)
+    jsLayer += "var ai=document.querySelectorAll('.matlab-bg-img');var need=0;";
+    jsLayer += "for(var k=0;k<ai.length;k++){if(ai[k].src.indexOf('blob:')!==0)need++;}";
+    jsLayer += "return need;";
     jsLayer += "})()";
 
     std::string cmd1;
-    cmd1 += "{\"id\":1,\"method\":\"Runtime.evaluate\",\"params\":{\"expression\":\"";
+    cmd1 += "{\"id\":1,\"method\":\"Runtime.evaluate\",\"params\":{\"returnByValue\":true,\"expression\":\"";
     for (size_t i = 0; i < jsLayer.size(); i++) {
         char c = jsLayer[i];
         if      (c == '\\')      cmd1 += "\\\\";
@@ -513,24 +522,50 @@ bool CdpInjectCSS()
         Log(L"CDP: layer creation send failed");
         closesocket(ws); WSACleanup(); return false;
     }
-    CdpWsRecv(ws);
-    Log(L"CDP: dimming layer created");
+    std::string layerResp = CdpWsRecv(ws);
+
+    // Parse how many overlays need an image. If zero, the image is already
+    // present (steady state) — skip the expensive chunked transfer.
+    int needImage = -1;
+    {
+        const char *vk = "\"value\":";
+        const char *vp = strstr(layerResp.c_str(), vk);
+        if (vp) needImage = atoi(vp + strlen(vk));
+    }
+    Log(L"CDP: layers ready, %d overlay(s) need image", needImage);
+
+    if (needImage == 0) {
+        // Nothing to fill — image already injected. Done.
+        closesocket(ws); WSACleanup();
+        return true;
+    }
     /* PLACEHOLDER_CDP_INJECT_PART2 */
 
-    // Get base64 image data
-    EnterCriticalSection(&g_httpLock);
-    std::vector<BYTE> imgData = g_httpImgData;
-    const char *imgMime = g_httpImgMime;
-    LeaveCriticalSection(&g_httpLock);
+    // Get base64 image data (cached across calls; only re-encode if path changed)
+    static std::wstring s_cachedPath;
+    static std::string  s_cachedB64;
+    static std::string  s_cachedMime;
 
-    int imgB64Len = ((imgData.size() + 2) / 3) * 4;
-    char *imgB64Buf = new char[imgB64Len + 1];
-    b64encode(imgData.data(), (int)imgData.size(), imgB64Buf);
-    std::string imgB64(imgB64Buf);
-    delete[] imgB64Buf;
+    if (s_cachedPath != g_cfg.imagePath || s_cachedB64.empty()) {
+        EnterCriticalSection(&g_httpLock);
+        std::vector<BYTE> imgData = g_httpImgData;
+        const char *imgMimeLocal = g_httpImgMime;
+        LeaveCriticalSection(&g_httpLock);
 
-    Log(L"CDP: image %d bytes, base64 %d bytes, sending in chunks...",
-        (int)imgData.size(), (int)imgB64.size());
+        int imgB64Len = ((imgData.size() + 2) / 3) * 4;
+        char *imgB64Buf = new char[imgB64Len + 1];
+        b64encode(imgData.data(), (int)imgData.size(), imgB64Buf);
+        s_cachedB64  = imgB64Buf;
+        s_cachedMime = imgMimeLocal;
+        s_cachedPath = g_cfg.imagePath;
+        delete[] imgB64Buf;
+        Log(L"CDP: encoded image base64 (%d bytes), cached", (int)s_cachedB64.size());
+    }
+
+    const std::string &imgB64  = s_cachedB64;
+    const char        *imgMime = s_cachedMime.c_str();
+
+    Log(L"CDP: image base64 %d bytes, sending in chunks...", (int)imgB64.size());
 
     // Send base64 data in 6 KB chunks
     const int CHUNK = 6000;
