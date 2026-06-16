@@ -42,6 +42,8 @@ cd matlab-background-patch
 
 Then run `build.bat` (requires MinGW-w64 g++ in PATH).
 
+**( It won't generate ini files!**
+
 ## Usage
 
 ### Method 1: INI File
